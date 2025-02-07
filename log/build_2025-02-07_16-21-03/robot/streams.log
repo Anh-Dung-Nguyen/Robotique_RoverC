@@ -1,0 +1,15 @@
+[0.023s] Invoking command in '/home/nguyen-anh-dung/ros2_ws/build/robot': CMAKE_PREFIX_PATH=/home/nguyen-anh-dung/ros2_ws/install/roverc:/home/nguyen-anh-dung/ros2_ws/install/robot:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/nguyen-anh-dung/ros2_ws/install/roverc_client:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages:/home/nguyen-anh-dung/ros2_ws/install/roverc_client/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/nguyen-anh-dung/ros2_ws/build/robot -- -j8 -l8
+[0.116s] [ 20%] Built target motor_controller
+[0.121s] [ 40%] Built target trajectory2
+[0.125s] [ 60%] Built target algo_node
+[0.128s] [ 80%] Built target trajectory
+[0.134s] [ 90%] [32mBuilding CXX object CMakeFiles/tof_servoing.dir/src/tof_servoing.cpp.o[0m
+[3.663s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/tof_servoing.cpp:[m[K In member function ‘[01m[Kvoid Tof_servoing::[01;32m[KdistanceCallback[m[K(std_msgs::msg::Float32_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.663s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/tof_servoing.cpp:42:13:[m[K [01;31m[Kerror: [m[K‘[01m[KRLCCP_INFO[m[K’ was not declared in this scope; did you mean ‘[01m[KRCLCPP_INFO[m[K’?
+[3.663s]    42 |             [01;31m[KRLCCP_INFO[m[K(get_logger(),"Error : %f, Sum : %f, Diff :  %f", error, errorsum, (error-last_error));
+[3.663s]       |             [01;31m[K^~~~~~~~~~[m[K
+[3.663s]       |             [32m[KRCLCPP_INFO[m[K
+[7.287s] gmake[2]: *** [CMakeFiles/tof_servoing.dir/build.make:76: CMakeFiles/tof_servoing.dir/src/tof_servoing.cpp.o] Error 1
+[7.287s] gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/tof_servoing.dir/all] Error 2
+[7.287s] gmake: *** [Makefile:146: all] Error 2
+[7.289s] Invoked command in '/home/nguyen-anh-dung/ros2_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=/home/nguyen-anh-dung/ros2_ws/install/roverc:/home/nguyen-anh-dung/ros2_ws/install/robot:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/nguyen-anh-dung/ros2_ws/install/roverc_client:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages:/home/nguyen-anh-dung/ros2_ws/install/roverc_client/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/nguyen-anh-dung/ros2_ws/build/robot -- -j8 -l8

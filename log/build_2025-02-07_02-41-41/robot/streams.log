@@ -1,0 +1,47 @@
+[0.014s] Invoking command in '/home/nguyen-anh-dung/ros2_ws/build/robot': CMAKE_PREFIX_PATH=/home/nguyen-anh-dung/ros2_ws/install/roverc:/home/nguyen-anh-dung/ros2_ws/install/robot:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/nguyen-anh-dung/ros2_ws/install/roverc_client:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages:/home/nguyen-anh-dung/ros2_ws/install/roverc_client/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/nguyen-anh-dung/ros2_ws/build/robot -- -j8 -l8
+[0.071s] [ 33%] Built target algo_node
+[0.076s] [ 66%] Built target motor_controller
+[0.082s] [ 83%] [32mBuilding CXX object CMakeFiles/trajectory.dir/src/trajectory.cpp.o[0m
+[2.432s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:72:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs[m[K’ was not declared in this scope
+[2.432s]    72 |         rclcpp::Subscription<[01;31m[Kstd_msgs[m[K::msg::Float32>::SharedPtr dist_sub_;
+[2.432s]       |                              [01;31m[K^~~~~~~~[m[K
+[2.432s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:72:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.433s]    72 |         rclcpp::Subscription<std_msgs::msg::Float32[01;31m[K>[m[K::SharedPtr dist_sub_;
+[2.433s]       |                                                    [01;31m[K^[m[K
+[2.433s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:72:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[2.433s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:72:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[2.433s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:72:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[2.433s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:72:55:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.433s]    72 |         rclcpp::Subscription<std_msgs::msg::Float32>::[01;31m[KSharedPtr[m[K dist_sub_;
+[2.433s]       |                                                       [01;31m[K^~~~~~~~~[m[K
+[2.433s]       |                                                                [32m[K;[m[K
+[2.434s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:72:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kdist_sub_[m[K’ does not name a type
+[2.435s]    72 |         rclcpp::Subscription<std_msgs::msg::Float32>::SharedPtr [01;31m[Kdist_sub_[m[K;
+[2.435s]       |                                                                 [01;31m[K^~~~~~~~~[m[K
+[2.446s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:[m[K In constructor ‘[01m[KTrajectory::[01;32m[KTrajectory[m[K()[m[K’:
+[2.447s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:19:76:[m[K [01;31m[Kerror: [m[K‘[01m[Ktime_callback[m[K’ is not a member of ‘[01m[KTrajectory[m[K’
+[2.447s]    19 |             timer_ = this->create_wall_timer(500ms, std::bind(&Trajectory::[01;31m[Ktime_callback[m[K, this));
+[2.447s]       |                                                                            [01;31m[K^~~~~~~~~~~~~[m[K
+[2.449s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:23:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+[2.449s]    23 |         [01;31m[K}[m[K
+[2.449s]       |         [01;31m[K^[m[K
+[2.455s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[2.455s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:80:33:[m[K [01;31m[Kerror: [m[K‘[01m[KAlgoNode[m[K’ was not declared in this scope
+[2.455s]    80 |   rclcpp::spin(std::make_shared<[01;31m[KAlgoNode[m[K>());
+[2.455s]       |                                 [01;31m[K^~~~~~~~[m[K
+[2.455s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:80:42:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+[2.455s]    80 |   rclcpp::spin([01;31m[Kstd::make_shared<AlgoNode>()[m[K);
+[2.455s]       |                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[2.456s] In file included from [01m[K/usr/include/c++/13/memory:80[m[K,
+[2.456s]                  from [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:3[m[K:
+[2.456s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:1005:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<typename std::enable_if<(! std::is_array< <template-parameter-1-1> >::value), _Tp>::type> std::[01;32m[Kmake_shared[m[K(_Args&& ...)[m[K’
+[2.456s]  1005 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+[2.456s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[2.456s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:1005:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.456s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:80:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.456s]    80 |   rclcpp::spin([01;31m[Kstd::make_shared<AlgoNode>()[m[K);
+[2.456s]       |                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[3.405s] gmake[2]: *** [CMakeFiles/trajectory.dir/build.make:76: CMakeFiles/trajectory.dir/src/trajectory.cpp.o] Error 1
+[3.405s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/trajectory.dir/all] Error 2
+[3.406s] gmake: *** [Makefile:146: all] Error 2
+[3.407s] Invoked command in '/home/nguyen-anh-dung/ros2_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=/home/nguyen-anh-dung/ros2_ws/install/roverc:/home/nguyen-anh-dung/ros2_ws/install/robot:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/nguyen-anh-dung/ros2_ws/install/roverc_client:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages:/home/nguyen-anh-dung/ros2_ws/install/roverc_client/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/nguyen-anh-dung/ros2_ws/build/robot -- -j8 -l8

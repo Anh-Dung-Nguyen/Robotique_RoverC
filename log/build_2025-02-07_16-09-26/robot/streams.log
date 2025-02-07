@@ -1,0 +1,20 @@
+[0.020s] Invoking command in '/home/nguyen-anh-dung/ros2_ws/build/robot': CMAKE_PREFIX_PATH=/home/nguyen-anh-dung/ros2_ws/install/roverc:/home/nguyen-anh-dung/ros2_ws/install/robot:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/nguyen-anh-dung/ros2_ws/install/roverc_client:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages:/home/nguyen-anh-dung/ros2_ws/install/roverc_client/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/nguyen-anh-dung/ros2_ws/build/robot -- -j8 -l8
+[0.111s] [ 20%] Built target algo_node
+[0.111s] [ 70%] Built target motor_controller
+[0.112s] [ 80%] Built target trajectory
+[0.112s] [ 80%] Built target trajectory2
+[0.124s] [ 90%] [32mBuilding CXX object CMakeFiles/tof_servoing.dir/src/tof_servoing.cpp.o[0m
+[3.799s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/tof_servoing.cpp:32:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kvoid[m[K’
+[3.800s]    32 |         [01;31m[Kvoid[m[K distanceCallback(const std_msgs::msg::Float32::SharedPtr msg)
+[3.800s]       |         [01;31m[K^~~~[m[K
+[3.811s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/tof_servoing.cpp:[m[K In constructor ‘[01m[KTof_servoing::[01;32m[KTof_servoing[m[K()[m[K’:
+[3.812s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/tof_servoing.cpp:18:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kdist_sub_[m[K’ was not declared in this scope
+[3.812s]    18 |             [01;31m[Kdist_sub_[m[K = this->create_subscription<std_msgs::msg::Float32>("/RoverC/distance", 10,
+[3.812s]       |             [01;31m[K^~~~~~~~~[m[K
+[3.812s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/tof_servoing.cpp:19:58:[m[K [01;31m[Kerror: [m[K‘[01m[KdistanceCallback[m[K’ is not a member of ‘[01m[KTof_servoing[m[K’
+[3.812s]    19 |                                 std::bind(&Tof_servoing::[01;31m[KdistanceCallback[m[K, this, _1));
+[3.813s]       |                                                          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[5.266s] gmake[2]: *** [CMakeFiles/tof_servoing.dir/build.make:76: CMakeFiles/tof_servoing.dir/src/tof_servoing.cpp.o] Error 1
+[5.266s] gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/tof_servoing.dir/all] Error 2
+[5.267s] gmake: *** [Makefile:146: all] Error 2
+[5.269s] Invoked command in '/home/nguyen-anh-dung/ros2_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=/home/nguyen-anh-dung/ros2_ws/install/roverc:/home/nguyen-anh-dung/ros2_ws/install/robot:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/nguyen-anh-dung/ros2_ws/install/roverc_client:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages:/home/nguyen-anh-dung/ros2_ws/install/roverc_client/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/nguyen-anh-dung/ros2_ws/build/robot -- -j8 -l8

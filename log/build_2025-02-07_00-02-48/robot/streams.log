@@ -1,0 +1,31 @@
+[0.016s] Invoking command in '/home/nguyen-anh-dung/ros2_ws/build/robot': CMAKE_PREFIX_PATH=/home/nguyen-anh-dung/ros2_ws/install/roverc:/home/nguyen-anh-dung/ros2_ws/install/robot:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/nguyen-anh-dung/ros2_ws/install/roverc_client:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages:/home/nguyen-anh-dung/ros2_ws/install/roverc_client/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/nguyen-anh-dung/ros2_ws/build/robot -- -j8 -l8
+[0.071s] [ 25%] [32mBuilding CXX object CMakeFiles/algo_node.dir/src/algo_node.cpp.o[0m
+[0.075s] [ 50%] [32mBuilding CXX object CMakeFiles/motor_controller.dir/src/motor_controller.cpp.o[0m
+[2.604s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/motor_controller.cpp:[m[K In constructor ‘[01m[KMotorController::[01;32m[KMotorController[m[K()[m[K’:
+[2.604s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/motor_controller.cpp:19:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_vel_sub_[m[K’ was not declared in this scope
+[2.604s]    19 |         [01;31m[Kcmd_vel_sub_[m[K = this->create_subscription<geometry_msgs::msg::Twist>(
+[2.605s]       |         [01;31m[K^~~~~~~~~~~~[m[K
+[2.628s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/motor_controller.cpp:[m[K In member function ‘[01m[Kvoid MotorController::[01;32m[KcmdVelCallback[m[K(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.628s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/motor_controller.cpp:51:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel_speed_publisher_[m[K’ was not declared in this scope
+[2.628s]    51 |         [01;31m[Kwheel_speed_publisher_[m[K->publish(wheels);
+[2.628s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.636s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/motor_controller.cpp:[m[K In member function ‘[01m[Kvoid MotorController::[01;32m[Ktimer_callback[m[K()[m[K’:
+[2.636s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/motor_controller.cpp:58:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kavancer[m[K’ was not declared in this scope
+[2.636s]    58 |           [01;31m[Kavancer[m[K();
+[2.636s]       |           [01;31m[K^~~~~~~[m[K
+[2.644s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/motor_controller.cpp:61:11:[m[K [01;31m[Kerror: [m[K‘[01m[Ksur_le_cote[m[K’ was not declared in this scope
+[2.644s]    61 |           [01;31m[Ksur_le_cote[m[K();
+[2.644s]       |           [01;31m[K^~~~~~~~~~~[m[K
+[2.652s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/motor_controller.cpp:64:11:[m[K [01;31m[Kerror: [m[K‘[01m[Ken_travers[m[K’ was not declared in this scope
+[2.653s]    64 |           [01;31m[Ken_travers[m[K();
+[2.653s]       |           [01;31m[K^~~~~~~~~~[m[K
+[2.664s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/motor_controller.cpp:67:11:[m[K [01;31m[Kerror: [m[K‘[01m[Ktourner_sur_place[m[K’ was not declared in this scope
+[2.664s]    67 |           [01;31m[Ktourner_sur_place[m[K();
+[2.664s]       |           [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[5.044s] gmake[2]: *** [CMakeFiles/motor_controller.dir/build.make:76: CMakeFiles/motor_controller.dir/src/motor_controller.cpp.o] Error 1
+[5.045s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/motor_controller.dir/all] Error 2
+[5.045s] gmake[1]: *** Waiting for unfinished jobs....
+[8.809s] [ 75%] [32m[1mLinking CXX executable algo_node[0m
+[9.111s] [ 75%] Built target algo_node
+[9.112s] gmake: *** [Makefile:146: all] Error 2
+[9.115s] Invoked command in '/home/nguyen-anh-dung/ros2_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=/home/nguyen-anh-dung/ros2_ws/install/roverc:/home/nguyen-anh-dung/ros2_ws/install/robot:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/nguyen-anh-dung/ros2_ws/install/roverc_client:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages:/home/nguyen-anh-dung/ros2_ws/install/roverc_client/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/nguyen-anh-dung/ros2_ws/build/robot -- -j8 -l8

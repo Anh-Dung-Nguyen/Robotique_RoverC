@@ -1,0 +1,56 @@
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/tof_servoing.cpp:44:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs[m[K’ was not declared in this scope
+   44 |         rclcpp::Publisher<[01;31m[Kgeometry_msgs[m[K::msg::Twist>::SharedPtr cmd_vel_pub_;
+      |                           [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/tof_servoing.cpp:44:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   44 |         rclcpp::Publisher<geometry_msgs::msg::Twist[01;31m[K>[m[K::SharedPtr cmd_vel_pub_;
+      |                                                    [01;31m[K^[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/tof_servoing.cpp:44:55:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   44 |         rclcpp::Publisher<geometry_msgs::msg::Twist>::[01;31m[KSharedPtr[m[K cmd_vel_pub_;
+      |                                                       [01;31m[K^~~~~~~~~[m[K
+      |                                                                [32m[K;[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/tof_servoing.cpp:44:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_vel_pub_[m[K’ does not name a type
+   44 |         rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr [01;31m[Kcmd_vel_pub_[m[K;
+      |                                                                 [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/tof_servoing.cpp:[m[K In constructor ‘[01m[KTof_servoing::[01;32m[KTof_servoing[m[K()[m[K’:
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/tof_servoing.cpp:20:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_vel_pub_[m[K’ was not declared in this scope
+   20 |             [01;31m[Kcmd_vel_pub_[m[K = this->create_publisher<geometry_msgs::msg::Twist>("RoverC/cmd_vel", 10);
+      |             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/tof_servoing.cpp:20:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs[m[K’ was not declared in this scope
+   20 |             cmd_vel_pub_ = this->create_publisher<[01;31m[Kgeometry_msgs[m[K::msg::Twist>("RoverC/cmd_vel", 10);
+      |                                                   [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/tof_servoing.cpp:20:34:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   20 |             cmd_vel_pub_ = this->[01;31m[Kcreate_publisher<geometry_msgs::msg::Twist>[m[K("RoverC/cmd_vel", 10);
+      |                                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/tof_servoing.cpp:20:77:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTof_servoing::create_publisher<<expression error> >(const char [15], int)[m[K’
+   20 |             cmd_vel_pub_ = [01;31m[Kthis->create_publisher<geometry_msgs::msg::Twist>("RoverC/cmd_vel", 10)[m[K;
+      |                            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K,
+                 from [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/tof_servoing.cpp:6[m[K:
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:197:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::[01;32m[Kcreate_publisher[m[K(const std::string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+  197 |   [01;36m[Kcreate_publisher[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:197:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/tof_servoing.cpp:20:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   20 |             cmd_vel_pub_ = [01;31m[Kthis->create_publisher<geometry_msgs::msg::Twist>("RoverC/cmd_vel", 10)[m[K;
+      |                            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/tof_servoing.cpp:[m[K In member function ‘[01m[Kvoid Tof_servoing::[01;32m[KdistanceCallback[m[K(std_msgs::msg::Float32_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/tof_servoing.cpp:26:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs[m[K’ has not been declared
+   26 |             [01;31m[Kgeometry_msgs[m[K::msg::Twist cmd_vel;
+      |             [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/tof_servoing.cpp:33:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_vel[m[K’ was not declared in this scope
+   33 |                 [01;31m[Kcmd_vel[m[K.linear.x = error * 0.5;
+      |                 [01;31m[K^~~~~~~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/tof_servoing.cpp:37:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_vel[m[K’ was not declared in this scope
+   37 |                 [01;31m[Kcmd_vel[m[K.linear.x = 0.0;
+      |                 [01;31m[K^~~~~~~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/tof_servoing.cpp:40:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_vel_pub_[m[K’ was not declared in this scope
+   40 |             [01;31m[Kcmd_vel_pub_[m[K->publish(cmd_vel);
+      |             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/tof_servoing.cpp:40:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_vel[m[K’ was not declared in this scope
+   40 |             cmd_vel_pub_->publish([01;31m[Kcmd_vel[m[K);
+      |                                   [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/tof_servoing.dir/build.make:76: CMakeFiles/tof_servoing.dir/src/tof_servoing.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/tof_servoing.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

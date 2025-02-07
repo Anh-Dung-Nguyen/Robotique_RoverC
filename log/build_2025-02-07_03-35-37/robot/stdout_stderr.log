@@ -1,0 +1,80 @@
+-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+-- Found roverc: 0.0.0 (/home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/cmake)
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/nguyen-anh-dung/ros2_ws/build/robot
+[ 25%] Built target motor_controller
+[ 37%] [32mBuilding CXX object CMakeFiles/trajectory2.dir/src/trajectory2.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/trajectory.dir/src/trajectory.cpp.o[0m
+[ 75%] Built target algo_node
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory2.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.hpp: No such file or directory
+    6 | #include [01;31m[K"rclcpp/rclcpp.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/trajectory2.dir/build.make:76: CMakeFiles/trajectory2.dir/src/trajectory2.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/trajectory2.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:[m[K In member function ‘[01m[Kvoid Trajectory::[01;32m[Kavancer[m[K()[m[K’:
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:66:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing geometry_msgs::msg::Twist = struct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kfront_right[m[K’
+   66 |             wheels.[01;31m[Kfront_right[m[K = 50;
+      |                    [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:67:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing geometry_msgs::msg::Twist = struct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kfront_left[m[K’
+   67 |             wheels.[01;31m[Kfront_left[m[K  = 50;
+      |                    [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:68:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing geometry_msgs::msg::Twist = struct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’} has no member named ‘[01m[Krear_right[m[K’
+   68 |             wheels.[01;31m[Krear_right[m[K  = 50;
+      |                    [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:69:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing geometry_msgs::msg::Twist = struct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’} has no member named ‘[01m[Krear_left[m[K’
+   69 |             wheels.[01;31m[Krear_left[m[K   = 50;
+      |                    [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:[m[K In member function ‘[01m[Kvoid Trajectory::[01;32m[Kreculer[m[K()[m[K’:
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:76:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing geometry_msgs::msg::Twist = struct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kfront_right[m[K’
+   76 |             wheels.[01;31m[Kfront_right[m[K = -50;
+      |                    [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:77:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing geometry_msgs::msg::Twist = struct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kfront_left[m[K’
+   77 |             wheels.[01;31m[Kfront_left[m[K  = -50;
+      |                    [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:78:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing geometry_msgs::msg::Twist = struct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’} has no member named ‘[01m[Krear_right[m[K’
+   78 |             wheels.[01;31m[Krear_right[m[K  = -50;
+      |                    [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:79:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing geometry_msgs::msg::Twist = struct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’} has no member named ‘[01m[Krear_left[m[K’
+   79 |             wheels.[01;31m[Krear_left[m[K   = -50;
+      |                    [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:[m[K In member function ‘[01m[Kvoid Trajectory::[01;32m[Ktourner_a_droite[m[K()[m[K’:
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:86:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing geometry_msgs::msg::Twist = struct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kfront_right[m[K’
+   86 |             wheels.[01;31m[Kfront_right[m[K = 50;
+      |                    [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:87:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing geometry_msgs::msg::Twist = struct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kfront_left[m[K’
+   87 |             wheels.[01;31m[Kfront_left[m[K  = -50;
+      |                    [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:88:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing geometry_msgs::msg::Twist = struct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’} has no member named ‘[01m[Krear_right[m[K’
+   88 |             wheels.[01;31m[Krear_right[m[K  = 50;
+      |                    [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:89:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing geometry_msgs::msg::Twist = struct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’} has no member named ‘[01m[Krear_left[m[K’
+   89 |             wheels.[01;31m[Krear_left[m[K   = -50;
+      |                    [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:[m[K In member function ‘[01m[Kvoid Trajectory::[01;32m[Ktourner_a_gauche[m[K()[m[K’:
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:96:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing geometry_msgs::msg::Twist = struct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kfront_right[m[K’
+   96 |             wheels.[01;31m[Kfront_right[m[K = -50;
+      |                    [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:97:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing geometry_msgs::msg::Twist = struct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kfront_left[m[K’
+   97 |             wheels.[01;31m[Kfront_left[m[K  = 50;
+      |                    [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:98:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing geometry_msgs::msg::Twist = struct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’} has no member named ‘[01m[Krear_right[m[K’
+   98 |             wheels.[01;31m[Krear_right[m[K  = -50;
+      |                    [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/trajectory.cpp:99:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing geometry_msgs::msg::Twist = struct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’} has no member named ‘[01m[Krear_left[m[K’
+   99 |             wheels.[01;31m[Krear_left[m[K   = 50;
+      |                    [01;31m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/trajectory.dir/build.make:76: CMakeFiles/trajectory.dir/src/trajectory.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/trajectory.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

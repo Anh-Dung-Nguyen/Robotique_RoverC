@@ -1,0 +1,15 @@
+[ 20%] Built target trajectory
+[ 40%] Built target algo_node
+[ 60%] Built target motor_controller
+[ 80%] Built target trajectory2
+[ 90%] [32mBuilding CXX object CMakeFiles/tof_servoing.dir/src/tof_servoing.cpp.o[0m
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/tof_servoing.cpp:[m[K In member function ‘[01m[Kvoid Tof_servoing::[01;32m[KdistanceCallback[m[K(std_msgs::msg::Float32_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/tof_servoing.cpp:47:28:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K+=[m[K’ token
+   47 |             float errorsum [01;31m[K+=[m[K std::max(std::min(errorsum,maxsum),minsum);;
+      |                            [01;31m[K^~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/tof_servoing.cpp:46:19:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdiff[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   46 |             float [01;35m[Kdiff[m[K = error - last_error;
+      |                   [01;35m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/tof_servoing.dir/build.make:76: CMakeFiles/tof_servoing.dir/src/tof_servoing.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/tof_servoing.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

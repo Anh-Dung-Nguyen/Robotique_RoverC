@@ -1,0 +1,74 @@
+[0.013s] Invoking command in '/home/nguyen-anh-dung/ros2_ws/build/robot': CMAKE_PREFIX_PATH=/home/nguyen-anh-dung/ros2_ws/install/roverc:/home/nguyen-anh-dung/ros2_ws/install/robot:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/nguyen-anh-dung/ros2_ws/install/roverc_client:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages:/home/nguyen-anh-dung/ros2_ws/install/roverc_client/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/nguyen-anh-dung/ros2_ws/build/robot -- -j8 -l8
+[0.067s] [ 50%] Built target algo_node
+[0.074s] [ 75%] [32mBuilding CXX object CMakeFiles/motor_controller.dir/src/motor_controller.cpp.o[0m
+[2.406s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.406s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[2.406s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[2.406s]                  from [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/motor_controller.cpp:6[m[K:
+[2.406s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/motor_controller.cpp:[m[K In member function ‘[01m[Kvoid MotorController::[01;32m[KcmdVelCallback[m[K(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.406s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/motor_controller.cpp:54:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 5 has type ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[2.406s]    54 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"Cmd wheels: FL=%f, FR=%f, RL=%f, RR=%f"[m[K, [32m[Kwheels.front_left[m[K, wheels.front_right, wheels.rear_left, wheels.rear_right);
+[2.407s]       |                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~[m[K
+[2.407s]       |                                                                                          [32m[K|[m[K
+[2.407s]       |                                                                                          [32m[Kint[m[K
+[2.407s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/motor_controller.cpp:54:58:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[2.407s]    54 |         RCLCPP_INFO(this->get_logger(), "Cmd wheels: FL=[01;36m[K%f[m[K, FR=%f, RL=%f, RR=%f", wheels.front_left, wheels.front_right, wheels.rear_left, wheels.rear_right);
+[2.407s]       |                                                         [01;36m[K~^[m[K
+[2.407s]       |                                                          [01;36m[K|[m[K
+[2.407s]       |                                                          [01;36m[Kdouble[m[K
+[2.408s]       |                                                         [32m[K%d[m[K
+[2.408s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/motor_controller.cpp:54:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 6 has type ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[2.408s]    54 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"Cmd wheels: FL=%f, FR=%f, RL=%f, RR=%f"[m[K, wheels.front_left, [32m[Kwheels.front_right[m[K, wheels.rear_left, wheels.rear_right);
+[2.408s]       |                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                     [32m[K~~~~~~~~~~~~~~~~~~[m[K
+[2.408s]       |                                                                                                             [32m[K|[m[K
+[2.408s]       |                                                                                                             [32m[Kint[m[K
+[2.408s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/motor_controller.cpp:54:65:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[2.409s]    54 |         RCLCPP_INFO(this->get_logger(), "Cmd wheels: FL=%f, FR=[01;36m[K%f[m[K, RL=%f, RR=%f", wheels.front_left, wheels.front_right, wheels.rear_left, wheels.rear_right);
+[2.409s]       |                                                                [01;36m[K~^[m[K
+[2.409s]       |                                                                 [01;36m[K|[m[K
+[2.409s]       |                                                                 [01;36m[Kdouble[m[K
+[2.409s]       |                                                                [32m[K%d[m[K
+[2.409s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/motor_controller.cpp:54:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 7 has type ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[2.409s]    54 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"Cmd wheels: FL=%f, FR=%f, RL=%f, RR=%f"[m[K, wheels.front_left, wheels.front_right, [32m[Kwheels.rear_left[m[K, wheels.rear_right);
+[2.409s]       |                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                         [32m[K~~~~~~~~~~~~~~~~[m[K
+[2.410s]       |                                                                                                                                 [32m[K|[m[K
+[2.410s]       |                                                                                                                                 [32m[Kint[m[K
+[2.410s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/motor_controller.cpp:54:72:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[2.410s]    54 |         RCLCPP_INFO(this->get_logger(), "Cmd wheels: FL=%f, FR=%f, RL=[01;36m[K%f[m[K, RR=%f", wheels.front_left, wheels.front_right, wheels.rear_left, wheels.rear_right);
+[2.410s]       |                                                                       [01;36m[K~^[m[K
+[2.410s]       |                                                                        [01;36m[K|[m[K
+[2.410s]       |                                                                        [01;36m[Kdouble[m[K
+[2.410s]       |                                                                       [32m[K%d[m[K
+[2.411s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/motor_controller.cpp:54:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 8 has type ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[2.411s]    54 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"Cmd wheels: FL=%f, FR=%f, RL=%f, RR=%f"[m[K, wheels.front_left, wheels.front_right, wheels.rear_left, [32m[Kwheels.rear_right[m[K);
+[2.411s]       |                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                                           [32m[K~~~~~~~~~~~~~~~~~[m[K
+[2.411s]       |                                                                                                                                                   [32m[K|[m[K
+[2.411s]       |                                                                                                                                                   [32m[Kint[m[K
+[2.411s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/motor_controller.cpp:54:79:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[2.411s]    54 |         RCLCPP_INFO(this->get_logger(), "Cmd wheels: FL=%f, FR=%f, RL=%f, RR=[01;36m[K%f[m[K", wheels.front_left, wheels.front_right, wheels.rear_left, wheels.rear_right);
+[2.412s]       |                                                                              [01;36m[K~^[m[K
+[2.412s]       |                                                                               [01;36m[K|[m[K
+[2.412s]       |                                                                               [01;36m[Kdouble[m[K
+[2.412s]       |                                                                              [32m[K%d[m[K
+[8.339s] [100%] [32m[1mLinking CXX executable motor_controller[0m
+[8.631s] [100%] Built target motor_controller
+[8.643s] Invoked command in '/home/nguyen-anh-dung/ros2_ws/build/robot' returned '0': CMAKE_PREFIX_PATH=/home/nguyen-anh-dung/ros2_ws/install/roverc:/home/nguyen-anh-dung/ros2_ws/install/robot:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/nguyen-anh-dung/ros2_ws/install/roverc_client:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages:/home/nguyen-anh-dung/ros2_ws/install/roverc_client/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/nguyen-anh-dung/ros2_ws/build/robot -- -j8 -l8
+[8.644s] Invoking command in '/home/nguyen-anh-dung/ros2_ws/build/robot': CMAKE_PREFIX_PATH=/home/nguyen-anh-dung/ros2_ws/install/roverc:/home/nguyen-anh-dung/ros2_ws/install/robot:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/nguyen-anh-dung/ros2_ws/install/roverc_client:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages:/home/nguyen-anh-dung/ros2_ws/install/roverc_client/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/nguyen-anh-dung/ros2_ws/build/robot
+[8.652s] -- Install configuration: ""
+[8.652s] -- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/lib/robot/algo_node
+[8.652s] -- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/share/ament_index/resource_index/package_run_dependencies/robot
+[8.652s] -- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/share/ament_index/resource_index/parent_prefix_path/robot
+[8.652s] -- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/share/robot/environment/ament_prefix_path.sh
+[8.652s] -- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/share/robot/environment/ament_prefix_path.dsv
+[8.653s] -- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/share/robot/environment/path.sh
+[8.653s] -- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/share/robot/environment/path.dsv
+[8.653s] -- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/share/robot/local_setup.bash
+[8.653s] -- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/share/robot/local_setup.sh
+[8.653s] -- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/share/robot/local_setup.zsh
+[8.653s] -- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/share/robot/local_setup.dsv
+[8.653s] -- Installing: /home/nguyen-anh-dung/ros2_ws/install/robot/share/robot/package.dsv
+[8.653s] -- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/share/ament_index/resource_index/packages/robot
+[8.653s] -- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/share/robot/cmake/robotConfig.cmake
+[8.653s] -- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/share/robot/cmake/robotConfig-version.cmake
+[8.653s] -- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/share/robot/package.xml
+[8.655s] Invoked command in '/home/nguyen-anh-dung/ros2_ws/build/robot' returned '0': CMAKE_PREFIX_PATH=/home/nguyen-anh-dung/ros2_ws/install/roverc:/home/nguyen-anh-dung/ros2_ws/install/robot:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/nguyen-anh-dung/ros2_ws/install/roverc_client:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages:/home/nguyen-anh-dung/ros2_ws/install/roverc_client/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/nguyen-anh-dung/ros2_ws/build/robot

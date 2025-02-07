@@ -1,0 +1,29 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/algo_node.dir/src/algo_node.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/motor_controller.dir/src/motor_controller.cpp.o[0m
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/motor_controller.cpp:[m[K In constructor ‘[01m[KMotorController::[01;32m[KMotorController[m[K()[m[K’:
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/motor_controller.cpp:19:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_vel_sub_[m[K’ was not declared in this scope
+   19 |         [01;31m[Kcmd_vel_sub_[m[K = this->create_subscription<geometry_msgs::msg::Twist>(
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/motor_controller.cpp:[m[K In member function ‘[01m[Kvoid MotorController::[01;32m[KcmdVelCallback[m[K(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/motor_controller.cpp:51:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel_speed_publisher_[m[K’ was not declared in this scope
+   51 |         [01;31m[Kwheel_speed_publisher_[m[K->publish(wheels);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/motor_controller.cpp:[m[K In member function ‘[01m[Kvoid MotorController::[01;32m[Ktimer_callback[m[K()[m[K’:
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/motor_controller.cpp:58:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kavancer[m[K’ was not declared in this scope
+   58 |           [01;31m[Kavancer[m[K();
+      |           [01;31m[K^~~~~~~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/motor_controller.cpp:61:11:[m[K [01;31m[Kerror: [m[K‘[01m[Ksur_le_cote[m[K’ was not declared in this scope
+   61 |           [01;31m[Ksur_le_cote[m[K();
+      |           [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/motor_controller.cpp:64:11:[m[K [01;31m[Kerror: [m[K‘[01m[Ken_travers[m[K’ was not declared in this scope
+   64 |           [01;31m[Ken_travers[m[K();
+      |           [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/motor_controller.cpp:67:11:[m[K [01;31m[Kerror: [m[K‘[01m[Ktourner_sur_place[m[K’ was not declared in this scope
+   67 |           [01;31m[Ktourner_sur_place[m[K();
+      |           [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/motor_controller.dir/build.make:76: CMakeFiles/motor_controller.dir/src/motor_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/motor_controller.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 75%] [32m[1mLinking CXX executable algo_node[0m
+[ 75%] Built target algo_node
+gmake: *** [Makefile:146: all] Error 2
