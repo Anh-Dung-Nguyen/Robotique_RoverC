@@ -685,4 +685,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/trajectory.dir/DependInfo.cmake"
   "CMakeFiles/trajectory2.dir/DependInfo.cmake"
   "CMakeFiles/tof_servoing.dir/DependInfo.cmake"
+  "CMakeFiles/line_servoing_front.dir/DependInfo.cmake"
+  "CMakeFiles/line_servoing_dual.dir/DependInfo.cmake"
   )

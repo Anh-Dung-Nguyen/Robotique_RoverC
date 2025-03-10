@@ -262,6 +262,32 @@ tof_servoing/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tof_servoing.dir/build.make CMakeFiles/tof_servoing.dir/build
 .PHONY : tof_servoing/fast
 
+#=============================================================================
+# Target rules for targets named line_servoing_front
+
+# Build rule for target.
+line_servoing_front: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 line_servoing_front
+.PHONY : line_servoing_front
+
+# fast build rule for target.
+line_servoing_front/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/line_servoing_front.dir/build.make CMakeFiles/line_servoing_front.dir/build
+.PHONY : line_servoing_front/fast
+
+#=============================================================================
+# Target rules for targets named line_servoing_dual
+
+# Build rule for target.
+line_servoing_dual: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 line_servoing_dual
+.PHONY : line_servoing_dual
+
+# fast build rule for target.
+line_servoing_dual/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/line_servoing_dual.dir/build.make CMakeFiles/line_servoing_dual.dir/build
+.PHONY : line_servoing_dual/fast
+
 src/algo_node.o: src/algo_node.cpp.o
 .PHONY : src/algo_node.o
 
@@ -285,6 +311,54 @@ src/algo_node.s: src/algo_node.cpp.s
 src/algo_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/algo_node.dir/build.make CMakeFiles/algo_node.dir/src/algo_node.cpp.s
 .PHONY : src/algo_node.cpp.s
+
+src/line_servoing_dual.o: src/line_servoing_dual.cpp.o
+.PHONY : src/line_servoing_dual.o
+
+# target to build an object file
+src/line_servoing_dual.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/line_servoing_dual.dir/build.make CMakeFiles/line_servoing_dual.dir/src/line_servoing_dual.cpp.o
+.PHONY : src/line_servoing_dual.cpp.o
+
+src/line_servoing_dual.i: src/line_servoing_dual.cpp.i
+.PHONY : src/line_servoing_dual.i
+
+# target to preprocess a source file
+src/line_servoing_dual.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/line_servoing_dual.dir/build.make CMakeFiles/line_servoing_dual.dir/src/line_servoing_dual.cpp.i
+.PHONY : src/line_servoing_dual.cpp.i
+
+src/line_servoing_dual.s: src/line_servoing_dual.cpp.s
+.PHONY : src/line_servoing_dual.s
+
+# target to generate assembly for a file
+src/line_servoing_dual.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/line_servoing_dual.dir/build.make CMakeFiles/line_servoing_dual.dir/src/line_servoing_dual.cpp.s
+.PHONY : src/line_servoing_dual.cpp.s
+
+src/line_servoing_front.o: src/line_servoing_front.cpp.o
+.PHONY : src/line_servoing_front.o
+
+# target to build an object file
+src/line_servoing_front.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/line_servoing_front.dir/build.make CMakeFiles/line_servoing_front.dir/src/line_servoing_front.cpp.o
+.PHONY : src/line_servoing_front.cpp.o
+
+src/line_servoing_front.i: src/line_servoing_front.cpp.i
+.PHONY : src/line_servoing_front.i
+
+# target to preprocess a source file
+src/line_servoing_front.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/line_servoing_front.dir/build.make CMakeFiles/line_servoing_front.dir/src/line_servoing_front.cpp.i
+.PHONY : src/line_servoing_front.cpp.i
+
+src/line_servoing_front.s: src/line_servoing_front.cpp.s
+.PHONY : src/line_servoing_front.s
+
+# target to generate assembly for a file
+src/line_servoing_front.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/line_servoing_front.dir/build.make CMakeFiles/line_servoing_front.dir/src/line_servoing_front.cpp.s
+.PHONY : src/line_servoing_front.cpp.s
 
 src/motor_controller.o: src/motor_controller.cpp.o
 .PHONY : src/motor_controller.o
@@ -398,6 +472,8 @@ help:
 	@echo "... robot_uninstall"
 	@echo "... uninstall"
 	@echo "... algo_node"
+	@echo "... line_servoing_dual"
+	@echo "... line_servoing_front"
 	@echo "... motor_controller"
 	@echo "... tof_servoing"
 	@echo "... trajectory"
@@ -405,6 +481,12 @@ help:
 	@echo "... src/algo_node.o"
 	@echo "... src/algo_node.i"
 	@echo "... src/algo_node.s"
+	@echo "... src/line_servoing_dual.o"
+	@echo "... src/line_servoing_dual.i"
+	@echo "... src/line_servoing_dual.s"
+	@echo "... src/line_servoing_front.o"
+	@echo "... src/line_servoing_front.i"
+	@echo "... src/line_servoing_front.s"
 	@echo "... src/motor_controller.o"
 	@echo "... src/motor_controller.i"
 	@echo "... src/motor_controller.s"
