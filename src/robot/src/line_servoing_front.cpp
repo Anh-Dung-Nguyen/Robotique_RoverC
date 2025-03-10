@@ -2,10 +2,10 @@
 #include <functional>
 #include <memory>
 #include <string>
+#include <math.h>
 
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/u_int16_multi_array.hpp"
-#include "roverc/msg/wheel_speed.hpp"
 #include "geometry_msgs/msg/twist.hpp"
 
 using namespace std::chrono_literals;
@@ -19,42 +19,43 @@ class line_servoing_front : public rclcpp::Node
         RCLCPP_INFO(this->get_logger(), "Line_servoing_front node started.");
         
         rgbc_sub_ = this->create_subscription<std_msgs::msg::UInt16MultiArray>(
-            "/RoverC/rgbc", 10, std::bind(&LineServoingFront::rgbcCallback, this, _1));
-        cmd_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/RoverC/cmd_vel", 10);
+            "/RoverC/rgbc", 10, std::bind(&line_servoing_front::rgbcCallBack, this, _1));
+        
+            cmd_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/RoverC/cmd_vel", 10);
     }
 
   private:
-    void rgbcCallBack()
-    {   
-        void rgbcCallback(const std_msgs::msg::UInt16MultiArray::SharedPtr msg)
-        {
-            geometry_msgs::msg::Twist cmd;
-            
-            float red = msg->data[0];
-            float green = msg->data[1];
-            float blue = msg->data[2];
+    const double c_target = 500.0;
+    const double Kp = 0.002;
+    const double vitesse_x = 0.07;
 
-            float erreur = computeError(red, green, blue);
+    void rgbcCallBack(const std_msgs::msg::UInt16MultiArray::SharedPtr msg)
+    {
+      if (msg -> data.size() < 4)
+      {
+        RCLCPP_WARN(this -> get_logger(), "Données RGB incorrectes");
+        return;
+      }
 
-            float Kp = 0.01;
+      double c = static_cast<double>(msg -> data[3]);
 
-            float maxSpeed = 2;
-            float minSpeed = -2;
+      double error = c_target -c;
+      double wz = Kp * error;
 
-            cmd.linear.x = 5;
-            cmd.angular.z = std::max(std::min(Kp * erreur, maxspeed), minspeed);
+      wz = std::clamp(wz, -1.0, 1.0);
 
-            cmd_vel_pub_ -> publish(cmd);
-        }
+      RCLCPP_INFO(this -> get_logger(), "c: %.1f, error: %.1f, wz: %.2f", c, error, wz);
 
-        float computeError(float red, float green, float blue)
-        {
-            return (red + green) / 2 - blue;
-        }
+      geometry_msgs::msg::Twist cmd_vel;
+      cmd_vel.linear.x = vitesse_x;
+      cmd_vel.angular.z = wz;
+
+      cmd_vel_pub_ -> publish(cmd_vel);
+    }
 
     rclcpp::Subscription<std_msgs::msg::UInt16MultiArray>::SharedPtr rgbc_sub_;
     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_pub_;
-    }
+
 };
 
 int main(int argc, char * argv[])
