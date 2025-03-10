@@ -21,6 +21,7 @@ add_executable(trajectory src/trajectory.cpp)
 add_executable(trajectory2 src/trajectory2.cpp)
 add_executable(tof_servoing src/tof_servoing.cpp)
 add_executable(line_servoing_front src/line_servoing_front.cpp)
+add_executable(line_servoing_dual src/line_servoing_dual.cpp)
 
 ament_target_dependencies(algo_node rclcpp geometry_msgs std_msgs roverc)
 ament_target_dependencies(motor_controller rclcpp geometry_msgs roverc)
@@ -28,6 +29,7 @@ ament_target_dependencies(trajectory rclcpp geometry_msgs roverc)
 ament_target_dependencies(trajectory2 rclcpp geometry_msgs roverc)
 ament_target_dependencies(tof_servoing rclcpp geometry_msgs std_msgs roverc)
 ament_target_dependencies(line_servoing_front rclcpp geometry_msgs std_msgs roverc)
+ament_target_dependencies(line_servoing_dual rclcpp geometry_msgs std_msgs roverc)
 
 target_include_directories(algo_node PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
@@ -50,6 +52,9 @@ install(TARGETS tof_servoing
   DESTINATION lib/${PROJECT_NAME})
 
 install(TARGETS line_servoing_front
+  DESTINATION lib/${PROJECT_NAME})
+
+install(TARGETS line_servoing_dual
   DESTINATION lib/${PROJECT_NAME})
 
 ament_package()
