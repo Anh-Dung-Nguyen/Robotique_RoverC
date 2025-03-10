@@ -1,0 +1,24 @@
+[0.017s] Invoking command in '/home/nguyen-anh-dung/ros2_ws/build/robot': CMAKE_PREFIX_PATH=/home/nguyen-anh-dung/ros2_ws/install/roverc:/home/nguyen-anh-dung/ros2_ws/install/robot:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/nguyen-anh-dung/ros2_ws/install/roverc_client:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages:/home/nguyen-anh-dung/ros2_ws/install/roverc_client/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/nguyen-anh-dung/ros2_ws/build/robot -- -j8 -l8
+[0.093s] [ 14%] Built target algo_node
+[0.094s] [ 28%] Built target trajectory2
+[0.094s] [ 42%] Built target trajectory
+[0.095s] [ 57%] Built target tof_servoing
+[0.096s] [ 71%] Built target motor_controller
+[0.101s] [ 78%] [32mBuilding CXX object CMakeFiles/line_servoing_front.dir/src/line_servoing_front.cpp.o[0m
+[0.101s] [ 92%] Built target line_servoing_dual
+[2.489s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/line_servoing_front.cpp:[m[K In member function ‘[01m[Kfloat line_servoing_front::[01;32m[KcomputeError[m[K(float, float, float)[m[K’:
+[2.489s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/line_servoing_front.cpp:66:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kjaune_r[m[K’ was not declared in this scope
+[2.490s]    66 |             return (([01;31m[Kjaune_r[m[K - red) + (jaune_g - green) + (jaune_b - blue)) / 3.0;
+[2.490s]       |                      [01;31m[K^~~~~~~[m[K
+[2.496s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/line_servoing_front.cpp:66:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kjaune_g[m[K’ was not declared in this scope; did you mean ‘[01m[Kjaune_max_g[m[K’?
+[2.497s]    66 |             return ((jaune_r - red) + ([01;31m[Kjaune_g[m[K - green) + (jaune_b - blue)) / 3.0;
+[2.497s]       |                                        [01;31m[K^~~~~~~[m[K
+[2.497s]       |                                        [32m[Kjaune_max_g[m[K
+[2.505s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/line_servoing_front.cpp:66:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kjaune_b[m[K’ was not declared in this scope; did you mean ‘[01m[Kjaune_max_b[m[K’?
+[2.505s]    66 |             return ((jaune_r - red) + (jaune_g - green) + ([01;31m[Kjaune_b[m[K - blue)) / 3.0;
+[2.505s]       |                                                            [01;31m[K^~~~~~~[m[K
+[2.505s]       |                                                            [32m[Kjaune_max_b[m[K
+[5.076s] gmake[2]: *** [CMakeFiles/line_servoing_front.dir/build.make:76: CMakeFiles/line_servoing_front.dir/src/line_servoing_front.cpp.o] Error 1
+[5.076s] gmake[1]: *** [CMakeFiles/Makefile2:279: CMakeFiles/line_servoing_front.dir/all] Error 2
+[5.077s] gmake: *** [Makefile:146: all] Error 2
+[5.079s] Invoked command in '/home/nguyen-anh-dung/ros2_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=/home/nguyen-anh-dung/ros2_ws/install/roverc:/home/nguyen-anh-dung/ros2_ws/install/robot:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/nguyen-anh-dung/ros2_ws/install/roverc_client:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages:/home/nguyen-anh-dung/ros2_ws/install/roverc_client/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/nguyen-anh-dung/ros2_ws/build/robot -- -j8 -l8

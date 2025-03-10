@@ -1,0 +1,108 @@
+[0.012s] Invoking command in '/home/nguyen-anh-dung/ros2_ws/build/robot': CMAKE_PREFIX_PATH=/home/nguyen-anh-dung/ros2_ws/install/roverc:/home/nguyen-anh-dung/ros2_ws/install/robot:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/nguyen-anh-dung/ros2_ws/install/roverc_client:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages:/home/nguyen-anh-dung/ros2_ws/install/roverc_client/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/nguyen-anh-dung/ros2_ws/build/robot -- -j8 -l8
+[0.054s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.330s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.387s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.409s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.427s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.450s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.537s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.540s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.623s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.711s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.754s] -- Found roverc: 0.0.0 (/home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/cmake)
+[0.880s] -- Configuring done (0.8s)
+[0.920s] -- Generating done (0.0s)
+[0.934s] -- Build files have been written to: /home/nguyen-anh-dung/ros2_ws/build/robot
+[0.980s] [  8%] [32mBuilding CXX object CMakeFiles/line_servoing_front.dir/src/line_servoing_front.cpp.o[0m
+[1.000s] [ 33%] [32mBuilding CXX object CMakeFiles/motor_controller.dir/src/motor_controller.cpp.o[0m
+[1.000s] [ 33%] [32mBuilding CXX object CMakeFiles/trajectory2.dir/src/trajectory2.cpp.o[0m
+[1.002s] [ 33%] [32mBuilding CXX object CMakeFiles/algo_node.dir/src/algo_node.cpp.o[0m
+[1.003s] [ 41%] [32m[1mLinking CXX executable tof_servoing[0m
+[1.004s] [ 50%] [32mBuilding CXX object CMakeFiles/trajectory.dir/src/trajectory.cpp.o[0m
+[1.862s] [ 58%] Built target tof_servoing
+[5.734s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/line_servoing_front.cpp:[m[K In constructor ‘[01m[Kline_servoing_front::[01;32m[Kline_servoing_front[m[K()[m[K’:
+[5.738s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/line_servoing_front.cpp:22:44:[m[K [01;31m[Kerror: [m[K‘[01m[KLineServoingFront[m[K’ has not been declared
+[5.738s]    22 |             "/RoverC/rgbc", 10, std::bind(&[01;31m[KLineServoingFront[m[K::rgbcCallback, this, _1));
+[5.739s]       |                                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[5.739s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/line_servoing_front.cpp:[m[K In member function ‘[01m[Kvoid line_servoing_front::[01;32m[KrgbcCallBack[m[K()[m[K’:
+[5.739s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/line_servoing_front.cpp:35:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ was not declared in this scope
+[5.739s]    35 |       float red = [01;31m[Kmsg[m[K->data[0];
+[5.739s]       |                   [01;31m[K^~~[m[K
+[5.739s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/line_servoing_front.cpp:35:19:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[5.740s] In file included from [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:156[m[K,
+[5.740s]                  from [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:7[m[K,
+[5.740s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:21[m[K,
+[5.740s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[5.740s]                  from [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/line_servoing_front.cpp:6[m[K:
+[5.740s] [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:30:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+[5.741s]    30 | namespace [01;36m[Kmsg[m[K
+[5.741s]       |           [01;36m[K^~~[m[K
+[5.741s] In file included from [01m[K/opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp:23[m[K,
+[5.741s]                  from [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:267[m[K:
+[5.741s] [01m[K/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:30:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+[5.741s]    30 | namespace [01;36m[Kmsg[m[K
+[5.741s]       |           [01;36m[K^~~[m[K
+[5.742s] [01m[K/opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp:34:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kservice_msgs::msg[m[K’
+[5.742s]    34 | namespace [01;36m[Kmsg[m[K
+[5.742s]       |           [01;36m[K^~~[m[K
+[5.742s] In file included from [01m[K/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:26[m[K,
+[5.742s]                  from [01m[K/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+[5.742s]                  from [01m[K/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+[5.743s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[5.743s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[5.743s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[5.743s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[5.743s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[5.743s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:22[m[K,
+[5.743s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:38[m[K,
+[5.744s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[5.744s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[5.744s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K:
+[5.744s] [01m[K/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:30:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+[5.744s]    30 | namespace [01;36m[Kmsg[m[K
+[5.744s]       |           [01;36m[K^~~[m[K
+[5.745s] In file included from [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/multi_array_layout__struct.hpp:23[m[K,
+[5.745s]                  from [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/u_int16_multi_array__struct.hpp:23[m[K,
+[5.745s]                  from [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/u_int16_multi_array.hpp:7[m[K,
+[5.745s]                  from [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/line_servoing_front.cpp:7[m[K:
+[5.745s] [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/multi_array_dimension__struct.hpp:30:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+[5.745s]    30 | namespace [01;36m[Kmsg[m[K
+[5.746s]       |           [01;36m[K^~~[m[K
+[5.746s] In file included from [01m[K/home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/wheel_speed.hpp:7[m[K,
+[5.746s]                  from [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/line_servoing_front.cpp:8[m[K:
+[5.746s] [01m[K/home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/wheel_speed__struct.hpp:30:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kroverc::msg[m[K’
+[5.746s]    30 | namespace [01;36m[Kmsg[m[K
+[5.746s]       |           [01;36m[K^~~[m[K
+[5.747s] In file included from [01m[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:24[m[K,
+[5.747s]                  from [01m[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/twist.hpp:7[m[K,
+[5.747s]                  from [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/line_servoing_front.cpp:9[m[K:
+[5.747s] [01m[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp:30:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kgeometry_msgs::msg[m[K’
+[5.747s]    30 | namespace [01;36m[Kmsg[m[K
+[5.747s]       |           [01;36m[K^~~[m[K
+[5.750s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/line_servoing_front.cpp:47:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kmaxspeed[m[K’ was not declared in this scope; did you mean ‘[01m[KmaxSpeed[m[K’?
+[5.750s]    47 |       cmd.angular.z = std::max(std::min(Kp * erreur, [01;31m[Kmaxspeed[m[K), minspeed);
+[5.750s]       |                                                      [01;31m[K^~~~~~~~[m[K
+[5.750s]       |                                                      [32m[KmaxSpeed[m[K
+[5.759s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/line_servoing_front.cpp:47:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kminspeed[m[K’ was not declared in this scope; did you mean ‘[01m[KminSpeed[m[K’?
+[5.759s]    47 |       cmd.angular.z = std::max(std::min(Kp * erreur, maxspeed), [01;31m[Kminspeed[m[K);
+[5.759s]       |                                                                 [01;31m[K^~~~~~~~[m[K
+[5.759s]       |                                                                 [32m[KminSpeed[m[K
+[5.760s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/line_servoing_front.cpp:43:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KmaxSpeed[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[5.760s]    43 |       float [01;35m[KmaxSpeed[m[K = 2;
+[5.760s]       |             [01;35m[K^~~~~~~~[m[K
+[5.760s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/line_servoing_front.cpp:44:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KminSpeed[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[5.760s]    44 |       float [01;35m[KminSpeed[m[K = -2;
+[5.760s]       |             [01;35m[K^~~~~~~~[m[K
+[7.601s] gmake[2]: *** [CMakeFiles/line_servoing_front.dir/build.make:76: CMakeFiles/line_servoing_front.dir/src/line_servoing_front.cpp.o] Error 1
+[7.602s] gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/line_servoing_front.dir/all] Error 2
+[7.602s] gmake[1]: *** Waiting for unfinished jobs....
+[8.701s] [ 66%] [32m[1mLinking CXX executable trajectory[0m
+[8.860s] [ 75%] [32m[1mLinking CXX executable trajectory2[0m
+[8.989s] [ 75%] Built target trajectory
+[9.134s] [ 75%] Built target trajectory2
+[12.870s] [ 83%] [32m[1mLinking CXX executable motor_controller[0m
+[13.161s] [ 91%] [32m[1mLinking CXX executable algo_node[0m
+[13.207s] [ 91%] Built target motor_controller
+[13.490s] [ 91%] Built target algo_node
+[13.491s] gmake: *** [Makefile:146: all] Error 2
+[13.492s] Invoked command in '/home/nguyen-anh-dung/ros2_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=/home/nguyen-anh-dung/ros2_ws/install/roverc:/home/nguyen-anh-dung/ros2_ws/install/robot:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/nguyen-anh-dung/ros2_ws/install/roverc_client:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages:/home/nguyen-anh-dung/ros2_ws/install/roverc_client/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/nguyen-anh-dung/ros2_ws/build/robot -- -j8 -l8

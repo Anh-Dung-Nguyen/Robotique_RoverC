@@ -1,0 +1,53 @@
+[0.014s] Invoking command in '/home/nguyen-anh-dung/ros2_ws/build/robot': CMAKE_PREFIX_PATH=/home/nguyen-anh-dung/ros2_ws/install/roverc:/home/nguyen-anh-dung/ros2_ws/install/robot:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/nguyen-anh-dung/ros2_ws/install/roverc_client:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages:/home/nguyen-anh-dung/ros2_ws/install/roverc_client/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/nguyen-anh-dung/ros2_ws/build/robot -- -j8 -l8
+[0.040s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.274s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.308s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.319s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.333s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.349s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.418s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.419s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.486s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.558s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.593s] -- Found roverc: 0.0.0 (/home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/cmake)
+[0.715s] -- Configuring done (0.7s)
+[0.765s] -- Generating done (0.0s)
+[0.785s] -- Build files have been written to: /home/nguyen-anh-dung/ros2_ws/build/robot
+[0.844s] [ 14%] Built target trajectory2
+[0.845s] [ 21%] [32mBuilding CXX object CMakeFiles/line_servoing_front.dir/src/line_servoing_front.cpp.o[0m
+[0.846s] [ 35%] Built target motor_controller
+[0.851s] [ 50%] Built target trajectory
+[0.854s] [ 64%] Built target algo_node
+[0.856s] [ 78%] Built target line_servoing_dual
+[0.860s] [ 92%] Built target tof_servoing
+[3.288s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/line_servoing_front.cpp:51:50:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[3.288s]    51 |     float computeError (float r, float g, float b[01;31m[K)[m[K *
+[3.288s]       |                                                  [01;31m[K^[m[K
+[3.288s]       |                                                   [32m[K;[m[K
+[3.288s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/line_servoing_front.cpp:52:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K{[m[K’ token
+[3.288s]    52 |     [01;31m[K{[m[K
+[3.288s]       |     [01;31m[K^[m[K
+[3.332s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/line_servoing_front.cpp:[m[K In member function ‘[01m[Kbool line_servoing_front::[01;32m[KisYellow[m[K(float, float, float)[m[K’:
+[3.332s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/line_servoing_front.cpp:65:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kred[m[K’ was not declared in this scope; did you mean ‘[01m[Kread[m[K’?
+[3.332s]    65 |       return ([01;31m[Kred[m[K >= jaune_min_r && red <= jaune_max_r) &&
+[3.332s]       |               [01;31m[K^~~[m[K
+[3.333s]       |               [32m[Kread[m[K
+[3.338s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/line_servoing_front.cpp:66:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kgreen[m[K’ was not declared in this scope
+[3.338s]    66 |               ([01;31m[Kgreen[m[K >= jaune_min_g && green <= jaune_max_g) &&
+[3.338s]       |                [01;31m[K^~~~~[m[K
+[3.344s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/line_servoing_front.cpp:67:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kblue[m[K’ was not declared in this scope
+[3.344s]    67 |               ([01;31m[Kblue[m[K >= jaune_min_b && blue <= jaune_max_b);
+[3.344s]       |                [01;31m[K^~~~[m[K
+[3.344s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/line_servoing_front.cpp:63:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.344s]    63 |     bool isYellow ([01;35m[Kfloat r[m[K, float g, float b)
+[3.344s]       |                    [01;35m[K~~~~~~^[m[K
+[3.345s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/line_servoing_front.cpp:63:35:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.345s]    63 |     bool isYellow (float r, [01;35m[Kfloat g[m[K, float b)
+[3.345s]       |                             [01;35m[K~~~~~~^[m[K
+[3.345s] [01m[K/home/nguyen-anh-dung/ros2_ws/src/robot/src/line_servoing_front.cpp:63:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kb[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.345s]    63 |     bool isYellow (float r, float g, [01;35m[Kfloat b[m[K)
+[3.345s]       |                                      [01;35m[K~~~~~~^[m[K
+[5.822s] gmake[2]: *** [CMakeFiles/line_servoing_front.dir/build.make:76: CMakeFiles/line_servoing_front.dir/src/line_servoing_front.cpp.o] Error 1
+[5.822s] gmake[1]: *** [CMakeFiles/Makefile2:279: CMakeFiles/line_servoing_front.dir/all] Error 2
+[5.822s] gmake: *** [Makefile:146: all] Error 2
+[5.824s] Invoked command in '/home/nguyen-anh-dung/ros2_ws/build/robot' returned '2': CMAKE_PREFIX_PATH=/home/nguyen-anh-dung/ros2_ws/install/roverc:/home/nguyen-anh-dung/ros2_ws/install/robot:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/nguyen-anh-dung/ros2_ws/install/roverc_client:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages:/home/nguyen-anh-dung/ros2_ws/install/roverc_client/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/nguyen-anh-dung/ros2_ws/build/robot -- -j8 -l8
