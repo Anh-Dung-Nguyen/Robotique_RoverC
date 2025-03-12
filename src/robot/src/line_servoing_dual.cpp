@@ -27,7 +27,8 @@ class line_servoing_dual : public rclcpp::Node
         }
 
     private:
-        const double c_target = 560.0;
+        const double c_target = 560.0; // Il faut ajuster cette valeur en fonction des différentes conditions d'éclairage
+                                       // Chez moi, il marche avec 560
         const double Kp = 0.005;
         const double vitesse_x = 0.05;
 
