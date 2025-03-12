@@ -1,0 +1,342 @@
+[0.000000] (-) TimerEvent: {}
+[0.000153] (roverc) JobQueued: {'identifier': 'roverc', 'dependencies': OrderedDict()}
+[0.000263] (robot) JobQueued: {'identifier': 'robot', 'dependencies': OrderedDict({'roverc': '/home/nguyen-anh-dung/ros2_ws/install/roverc'})}
+[0.000288] (roverc_client) JobQueued: {'identifier': 'roverc_client', 'dependencies': OrderedDict({'roverc': '/home/nguyen-anh-dung/ros2_ws/install/roverc'})}
+[0.000480] (roverc) JobStarted: {'identifier': 'roverc'}
+[0.008416] (roverc) JobProgress: {'identifier': 'roverc', 'progress': 'cmake'}
+[0.009445] (roverc) JobProgress: {'identifier': 'roverc', 'progress': 'build'}
+[0.009510] (roverc) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nguyen-anh-dung/ros2_ws/build/roverc', '--', '-j8', '-l8'], 'cwd': '/home/nguyen-anh-dung/ros2_ws/build/roverc', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'nguyen-anh-dung', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/nguyen-anh-dung/ros2_ws/install/roverc/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/nguyen-anh-dung', 'CAML_LD_LIBRARY_PATH': '/home/nguyen-anh-dung/.opam/insa/lib/stublibs:/home/nguyen-anh-dung/.opam/insa/lib/ocaml/stublibs:/home/nguyen-anh-dung/.opam/insa/lib/ocaml', 'DESKTOP_SESSION': 'ubuntu', 'NVM_BIN': '/home/nguyen-anh-dung/.nvm/versions/node/v20.17.0/bin', 'OCAML_TOPLEVEL_PATH': '/home/nguyen-anh-dung/.opam/insa/lib/toplevel', 'NVM_INC': '/home/nguyen-anh-dung/.nvm/versions/node/v20.17.0/include/node', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2852', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'NVM_DIR': '/home/nguyen-anh-dung/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/nguyen-anh-dung/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'nguyen-anh-dung', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'nguyen-anh-dung', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/home/nguyen-anh-dung/.nvm/versions/node/v20.17.0/bin:/home/nguyen-anh-dung/.opam/insa/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/nguyen-anh-dung/.dotnet/tools:/home/nguyen-anh-dung/.local/share/JetBrains/Toolbox/scripts', 'SESSION_MANAGER': 'local/nguyen-anh-dung:@/tmp/.ICE-unix/2808,unix/nguyen-anh-dung:/tmp/.ICE-unix/2808', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/527f729a_48dd_447d_8968_9022c70f0f3d', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'DOTNET_BUNDLE_EXTRACT_BASE_DIR': '/home/nguyen-anh-dung/.cache/dotnet_bundle_extract', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.207', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/nguyen-anh-dung/ros2_ws/install/roverc_client:/home/nguyen-anh-dung/ros2_ws/install/robot:/home/nguyen-anh-dung/ros2_ws/install/roverc:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'OPAM_SWITCH_PREFIX': '/home/nguyen-anh-dung/.opam/insa', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nguyen-anh-dung/ros2_ws/build/roverc', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nguyen-anh-dung/ros2_ws/install/roverc_client/lib/python3.12/site-packages:/home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'MANPATH': '/home/nguyen-anh-dung/.nvm/versions/node/v20.17.0/share/man::/home/nguyen-anh-dung/.opam/insa/man', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/nguyen-anh-dung/ros2_ws/install/robot:/home/nguyen-anh-dung/ros2_ws/install/roverc:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/nguyen-anh-dung/ros2_ws/install/roverc_client:/opt/ros/jazzy'}), 'shell': False}
+[0.055017] (roverc) StdoutLine: {'line': b'[  2%] Built target roverc__rosidl_generator_type_description\n'}
+[0.063780] (roverc) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_roverc\n'}
+[0.072695] (roverc) StdoutLine: {'line': b'[  4%] Built target roverc__cpp\n'}
+[0.073466] (roverc) StdoutLine: {'line': b'[ 22%] Built target roverc__rosidl_generator_c\n'}
+[0.098737] (roverc) StdoutLine: {'line': b'[ 31%] Built target roverc__rosidl_typesupport_c\n'}
+[0.098983] (roverc) StdoutLine: {'line': b'[ 40%] Built target roverc__rosidl_typesupport_cpp\n'}
+[0.099171] (roverc) StdoutLine: {'line': b'[ 59%] Built target roverc__rosidl_typesupport_introspection_c\n'}
+[0.099310] (roverc) StdoutLine: {'line': b'[ 59%] Built target roverc__rosidl_typesupport_introspection_cpp\n'}
+[0.101827] (roverc) StdoutLine: {'line': b'[ 68%] Built target roverc__rosidl_typesupport_fastrtps_c\n'}
+[0.102061] (-) TimerEvent: {}
+[0.102185] (roverc) StdoutLine: {'line': b'[ 77%] Built target roverc__rosidl_typesupport_fastrtps_cpp\n'}
+[0.125931] (roverc) StdoutLine: {'line': b'[ 77%] Built target roverc\n'}
+[0.146234] (roverc) StdoutLine: {'line': b'[ 79%] Built target roverc__py\n'}
+[0.167629] (roverc) StdoutLine: {'line': b'[ 86%] Built target roverc__rosidl_generator_py\n'}
+[0.188365] (roverc) StdoutLine: {'line': b'[100%] Built target roverc_s__rosidl_typesupport_c\n'}
+[0.188615] (roverc) StdoutLine: {'line': b'[100%] Built target roverc_s__rosidl_typesupport_introspection_c\n'}
+[0.188767] (roverc) StdoutLine: {'line': b'[100%] Built target roverc_s__rosidl_typesupport_fastrtps_c\n'}
+[0.202146] (-) TimerEvent: {}
+[0.302348] (-) TimerEvent: {}
+[0.374765] (roverc) StdoutLine: {'line': b'running egg_info\n'}
+[0.402432] (-) TimerEvent: {}
+[0.407298] (roverc) StdoutLine: {'line': b'writing roverc.egg-info/PKG-INFO\n'}
+[0.407627] (roverc) StdoutLine: {'line': b'writing dependency_links to roverc.egg-info/dependency_links.txt\n'}
+[0.407920] (roverc) StdoutLine: {'line': b'writing top-level names to roverc.egg-info/top_level.txt\n'}
+[0.502009] (roverc) StdoutLine: {'line': b"reading manifest file 'roverc.egg-info/SOURCES.txt'\n"}
+[0.502507] (-) TimerEvent: {}
+[0.502822] (roverc) StdoutLine: {'line': b"writing manifest file 'roverc.egg-info/SOURCES.txt'\n"}
+[0.540760] (roverc) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_roverc_egg\n'}
+[0.553369] (roverc) CommandEnded: {'returncode': 0}
+[0.554356] (roverc) JobProgress: {'identifier': 'roverc', 'progress': 'install'}
+[0.565172] (roverc) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nguyen-anh-dung/ros2_ws/build/roverc'], 'cwd': '/home/nguyen-anh-dung/ros2_ws/build/roverc', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'nguyen-anh-dung', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/nguyen-anh-dung/ros2_ws/install/roverc/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/nguyen-anh-dung', 'CAML_LD_LIBRARY_PATH': '/home/nguyen-anh-dung/.opam/insa/lib/stublibs:/home/nguyen-anh-dung/.opam/insa/lib/ocaml/stublibs:/home/nguyen-anh-dung/.opam/insa/lib/ocaml', 'DESKTOP_SESSION': 'ubuntu', 'NVM_BIN': '/home/nguyen-anh-dung/.nvm/versions/node/v20.17.0/bin', 'OCAML_TOPLEVEL_PATH': '/home/nguyen-anh-dung/.opam/insa/lib/toplevel', 'NVM_INC': '/home/nguyen-anh-dung/.nvm/versions/node/v20.17.0/include/node', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2852', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'NVM_DIR': '/home/nguyen-anh-dung/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/nguyen-anh-dung/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'nguyen-anh-dung', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'nguyen-anh-dung', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/home/nguyen-anh-dung/.nvm/versions/node/v20.17.0/bin:/home/nguyen-anh-dung/.opam/insa/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/nguyen-anh-dung/.dotnet/tools:/home/nguyen-anh-dung/.local/share/JetBrains/Toolbox/scripts', 'SESSION_MANAGER': 'local/nguyen-anh-dung:@/tmp/.ICE-unix/2808,unix/nguyen-anh-dung:/tmp/.ICE-unix/2808', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/527f729a_48dd_447d_8968_9022c70f0f3d', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'DOTNET_BUNDLE_EXTRACT_BASE_DIR': '/home/nguyen-anh-dung/.cache/dotnet_bundle_extract', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.207', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/nguyen-anh-dung/ros2_ws/install/roverc_client:/home/nguyen-anh-dung/ros2_ws/install/robot:/home/nguyen-anh-dung/ros2_ws/install/roverc:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'OPAM_SWITCH_PREFIX': '/home/nguyen-anh-dung/.opam/insa', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nguyen-anh-dung/ros2_ws/build/roverc', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nguyen-anh-dung/ros2_ws/install/roverc_client/lib/python3.12/site-packages:/home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'MANPATH': '/home/nguyen-anh-dung/.nvm/versions/node/v20.17.0/share/man::/home/nguyen-anh-dung/.opam/insa/man', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/nguyen-anh-dung/ros2_ws/install/robot:/home/nguyen-anh-dung/ros2_ws/install/roverc:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/nguyen-anh-dung/ros2_ws/install/roverc_client:/opt/ros/jazzy'}), 'shell': False}
+[0.574711] (roverc) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.575037] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/ament_index/resource_index/rosidl_interfaces/roverc\n'}
+[0.575243] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/msg/RGB.json\n'}
+[0.575379] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/msg/WheelSpeed.json\n'}
+[0.575510] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc\n'}
+[0.575699] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg\n'}
+[0.575837] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail\n'}
+[0.575986] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/rgb__struct.h\n'}
+[0.576117] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/wheel_speed__description.c\n'}
+[0.576317] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/rgb__description.c\n'}
+[0.576460] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/rgb__functions.c\n'}
+[0.576587] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/rgb__functions.h\n'}
+[0.576784] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/rgb__type_support.c\n'}
+[0.576931] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/rgb__type_support.h\n'}
+[0.577062] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/wheel_speed__type_support.c\n'}
+[0.577190] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/wheel_speed__type_support.h\n'}
+[0.577319] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/wheel_speed__functions.h\n'}
+[0.577477] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/wheel_speed__struct.h\n'}
+[0.577618] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/wheel_speed__functions.c\n'}
+[0.577833] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/rgb.h\n'}
+[0.577987] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/wheel_speed.h\n'}
+[0.578179] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.578308] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/environment/library_path.sh\n'}
+[0.578449] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/environment/library_path.dsv\n'}
+[0.578580] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/lib/libroverc__rosidl_generator_c.so\n'}
+[0.578727] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc\n'}
+[0.578860] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg\n'}
+[0.578990] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail\n'}
+[0.579120] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/wheel_speed__rosidl_typesupport_fastrtps_c.h\n'}
+[0.579353] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/rgb__rosidl_typesupport_fastrtps_c.h\n'}
+[0.579485] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.579620] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/lib/libroverc__rosidl_typesupport_fastrtps_c.so\n'}
+[0.579761] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc\n'}
+[0.579891] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg\n'}
+[0.580016] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.580263] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail\n'}
+[0.580394] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/wheel_speed__rosidl_typesupport_introspection_c.h\n'}
+[0.580525] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/rgb__type_support.c\n'}
+[0.580669] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/wheel_speed__type_support.c\n'}
+[0.580802] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/rgb__rosidl_typesupport_introspection_c.h\n'}
+[0.580931] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/lib/libroverc__rosidl_typesupport_introspection_c.so\n'}
+[0.581059] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/lib/libroverc__rosidl_typesupport_c.so\n'}
+[0.581186] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc\n'}
+[0.581314] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg\n'}
+[0.581442] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail\n'}
+[0.581570] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/rgb__traits.hpp\n'}
+[0.581798] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/rgb__type_support.hpp\n'}
+[0.581926] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/wheel_speed__builder.hpp\n'}
+[0.582050] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/wheel_speed__struct.hpp\n'}
+[0.582173] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/wheel_speed__traits.hpp\n'}
+[0.582296] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/wheel_speed__type_support.hpp\n'}
+[0.582419] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/rgb__builder.hpp\n'}
+[0.582553] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/rgb__struct.hpp\n'}
+[0.582695] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/wheel_speed.hpp\n'}
+[0.582823] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.582946] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/rgb.hpp\n'}
+[0.583068] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc\n'}
+[0.583191] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg\n'}
+[0.583315] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail\n'}
+[0.583438] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/rgb__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.583561] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/wheel_speed__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.583707] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/dds_fastrtps\n'}
+[0.583835] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.583959] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/lib/libroverc__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.584081] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc\n'}
+[0.584204] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg\n'}
+[0.584344] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail\n'}
+[0.584468] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/wheel_speed__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.584592] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/wheel_speed__type_support.cpp\n'}
+[0.584732] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/rgb__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.584857] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/include/roverc/roverc/msg/detail/rgb__type_support.cpp\n'}
+[0.584979] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/lib/libroverc__rosidl_typesupport_introspection_cpp.so\n'}
+[0.585102] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/lib/libroverc__rosidl_typesupport_cpp.so\n'}
+[0.585224] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/environment/pythonpath.sh\n'}
+[0.585348] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/environment/pythonpath.dsv\n'}
+[0.585472] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages/roverc-0.0.0-py3.12.egg-info\n'}
+[0.585603] (roverc) StdoutLine: {'line': b'-- Installing: /home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages/roverc-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[0.585739] (roverc) StdoutLine: {'line': b'-- Installing: /home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages/roverc-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[0.585863] (roverc) StdoutLine: {'line': b'-- Installing: /home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages/roverc-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[0.585989] (roverc) StdoutLine: {'line': b'-- Installing: /home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages/roverc-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[0.586115] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages/roverc\n'}
+[0.586239] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages/roverc/roverc_s__rosidl_typesupport_fastrtps_c.so\n'}
+[0.586360] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages/roverc/roverc_s__rosidl_typesupport_c.so\n'}
+[0.586485] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages/roverc/_roverc_s.ep.rosidl_typesupport_c.c\n'}
+[0.586615] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages/roverc/msg\n'}
+[0.586762] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages/roverc/msg/_rgb.py\n'}
+[0.586896] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages/roverc/msg/_wheel_speed_s.c\n'}
+[0.587020] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages/roverc/msg/_wheel_speed.py\n'}
+[0.587145] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages/roverc/msg/_rgb_s.c\n'}
+[0.587267] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages/roverc/msg/__init__.py\n'}
+[0.587391] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages/roverc/_roverc_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.587514] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages/roverc/__init__.py\n'}
+[0.587650] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages/roverc/_roverc_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.587779] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages/roverc/roverc_s__rosidl_typesupport_introspection_c.so\n'}
+[0.602614] (-) TimerEvent: {}
+[0.619526] (roverc) StdoutLine: {'line': b"Listing '/home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages/roverc'...\n"}
+[0.619761] (roverc) StdoutLine: {'line': b"Listing '/home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages/roverc/msg'...\n"}
+[0.625849] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages/roverc/roverc_s__rosidl_typesupport_fastrtps_c.so\n'}
+[0.626115] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages/roverc/roverc_s__rosidl_typesupport_introspection_c.so\n'}
+[0.626276] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages/roverc/roverc_s__rosidl_typesupport_c.so\n'}
+[0.626490] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/lib/libroverc__rosidl_generator_py.so\n'}
+[0.626655] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/msg/RGB.idl\n'}
+[0.626897] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/msg/WheelSpeed.idl\n'}
+[0.627023] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/msg/RGB.msg\n'}
+[0.627143] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/msg/WheelSpeed.msg\n'}
+[0.627259] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/ament_index/resource_index/package_run_dependencies/roverc\n'}
+[0.627376] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/ament_index/resource_index/parent_prefix_path/roverc\n'}
+[0.627494] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/environment/ament_prefix_path.sh\n'}
+[0.627650] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/environment/ament_prefix_path.dsv\n'}
+[0.627843] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/environment/path.sh\n'}
+[0.627962] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/environment/path.dsv\n'}
+[0.628076] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/local_setup.bash\n'}
+[0.628195] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/local_setup.sh\n'}
+[0.628381] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/local_setup.zsh\n'}
+[0.628500] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/local_setup.dsv\n'}
+[0.628627] (roverc) StdoutLine: {'line': b'-- Installing: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/package.dsv\n'}
+[0.628752] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/ament_index/resource_index/packages/roverc\n'}
+[0.628871] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/cmake/export_roverc__rosidl_generator_cExport.cmake\n'}
+[0.628986] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/cmake/export_roverc__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.629106] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/cmake/export_roverc__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.629299] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/cmake/export_roverc__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.629419] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/cmake/roverc__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.629533] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/cmake/roverc__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.629659] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/cmake/roverc__rosidl_typesupport_cExport.cmake\n'}
+[0.629777] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/cmake/roverc__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.629890] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/cmake/export_roverc__rosidl_generator_cppExport.cmake\n'}
+[0.630004] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/cmake/export_roverc__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.630118] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/cmake/export_roverc__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.630232] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/cmake/roverc__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.630348] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/cmake/roverc__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.630465] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/cmake/roverc__rosidl_typesupport_cppExport.cmake\n'}
+[0.630582] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/cmake/roverc__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.630714] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/cmake/export_roverc__rosidl_generator_pyExport.cmake\n'}
+[0.630834] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/cmake/export_roverc__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.630951] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/cmake/rosidl_cmake-extras.cmake\n'}
+[0.631069] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.631184] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.631445] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.631566] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.631699] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.631821] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.631939] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/cmake/rovercConfig.cmake\n'}
+[0.632056] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/cmake/rovercConfig-version.cmake\n'}
+[0.632173] (roverc) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/roverc/share/roverc/package.xml\n'}
+[0.632762] (roverc) CommandEnded: {'returncode': 0}
+[0.662734] (roverc) JobEnded: {'identifier': 'roverc', 'rc': 0}
+[0.663506] (robot) JobStarted: {'identifier': 'robot'}
+[0.666444] (roverc_client) JobStarted: {'identifier': 'roverc_client'}
+[0.675210] (robot) JobProgress: {'identifier': 'robot', 'progress': 'cmake'}
+[0.676080] (robot) JobProgress: {'identifier': 'robot', 'progress': 'build'}
+[0.676674] (robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nguyen-anh-dung/ros2_ws/build/robot', '--', '-j8', '-l8'], 'cwd': '/home/nguyen-anh-dung/ros2_ws/build/robot', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'nguyen-anh-dung', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/nguyen-anh-dung/ros2_ws/install/roverc/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/nguyen-anh-dung', 'CAML_LD_LIBRARY_PATH': '/home/nguyen-anh-dung/.opam/insa/lib/stublibs:/home/nguyen-anh-dung/.opam/insa/lib/ocaml/stublibs:/home/nguyen-anh-dung/.opam/insa/lib/ocaml', 'DESKTOP_SESSION': 'ubuntu', 'NVM_BIN': '/home/nguyen-anh-dung/.nvm/versions/node/v20.17.0/bin', 'OCAML_TOPLEVEL_PATH': '/home/nguyen-anh-dung/.opam/insa/lib/toplevel', 'NVM_INC': '/home/nguyen-anh-dung/.nvm/versions/node/v20.17.0/include/node', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2852', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'NVM_DIR': '/home/nguyen-anh-dung/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/nguyen-anh-dung/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'nguyen-anh-dung', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'nguyen-anh-dung', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/home/nguyen-anh-dung/.nvm/versions/node/v20.17.0/bin:/home/nguyen-anh-dung/.opam/insa/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/nguyen-anh-dung/.dotnet/tools:/home/nguyen-anh-dung/.local/share/JetBrains/Toolbox/scripts', 'SESSION_MANAGER': 'local/nguyen-anh-dung:@/tmp/.ICE-unix/2808,unix/nguyen-anh-dung:/tmp/.ICE-unix/2808', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/527f729a_48dd_447d_8968_9022c70f0f3d', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'DOTNET_BUNDLE_EXTRACT_BASE_DIR': '/home/nguyen-anh-dung/.cache/dotnet_bundle_extract', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.207', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/nguyen-anh-dung/ros2_ws/install/roverc_client:/home/nguyen-anh-dung/ros2_ws/install/robot:/home/nguyen-anh-dung/ros2_ws/install/roverc:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'OPAM_SWITCH_PREFIX': '/home/nguyen-anh-dung/.opam/insa', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nguyen-anh-dung/ros2_ws/build/robot', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages:/home/nguyen-anh-dung/ros2_ws/install/roverc_client/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'MANPATH': '/home/nguyen-anh-dung/.nvm/versions/node/v20.17.0/share/man::/home/nguyen-anh-dung/.opam/insa/man', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/nguyen-anh-dung/ros2_ws/install/roverc:/home/nguyen-anh-dung/ros2_ws/install/robot:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/nguyen-anh-dung/ros2_ws/install/roverc_client:/opt/ros/jazzy'}), 'shell': False}
+[0.702735] (-) TimerEvent: {}
+[0.755932] (robot) StdoutLine: {'line': b'[ 28%] Built target trajectory\n'}
+[0.756235] (robot) StdoutLine: {'line': b'[ 28%] Built target algo_node\n'}
+[0.757819] (robot) StdoutLine: {'line': b'[ 42%] Built target trajectory2\n'}
+[0.762246] (robot) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/line_servoing_dual.dir/src/line_servoing_dual.cpp.o\x1b[0m\n'}
+[0.763733] (robot) StdoutLine: {'line': b'[ 64%] Built target tof_servoing\n'}
+[0.764164] (robot) StdoutLine: {'line': b'[ 92%] Built target line_servoing_front\n'}
+[0.764370] (robot) StdoutLine: {'line': b'[ 92%] Built target motor_controller\n'}
+[0.802854] (-) TimerEvent: {}
+[0.903070] (-) TimerEvent: {}
+[1.003296] (-) TimerEvent: {}
+[1.103579] (-) TimerEvent: {}
+[1.203898] (-) TimerEvent: {}
+[1.304146] (-) TimerEvent: {}
+[1.404415] (-) TimerEvent: {}
+[1.504713] (-) TimerEvent: {}
+[1.604996] (-) TimerEvent: {}
+[1.705278] (-) TimerEvent: {}
+[1.805604] (-) TimerEvent: {}
+[1.836237] (roverc_client) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/roverc_client', 'build', '--build-base', '/home/nguyen-anh-dung/ros2_ws/build/roverc_client/build', 'install', '--record', '/home/nguyen-anh-dung/ros2_ws/build/roverc_client/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/nguyen-anh-dung/ros2_ws/src/rover_client', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'nguyen-anh-dung', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/nguyen-anh-dung/ros2_ws/install/roverc/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/nguyen-anh-dung', 'CAML_LD_LIBRARY_PATH': '/home/nguyen-anh-dung/.opam/insa/lib/stublibs:/home/nguyen-anh-dung/.opam/insa/lib/ocaml/stublibs:/home/nguyen-anh-dung/.opam/insa/lib/ocaml', 'DESKTOP_SESSION': 'ubuntu', 'NVM_BIN': '/home/nguyen-anh-dung/.nvm/versions/node/v20.17.0/bin', 'OCAML_TOPLEVEL_PATH': '/home/nguyen-anh-dung/.opam/insa/lib/toplevel', 'NVM_INC': '/home/nguyen-anh-dung/.nvm/versions/node/v20.17.0/include/node', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2852', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'NVM_DIR': '/home/nguyen-anh-dung/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/nguyen-anh-dung/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'nguyen-anh-dung', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'nguyen-anh-dung', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/home/nguyen-anh-dung/.nvm/versions/node/v20.17.0/bin:/home/nguyen-anh-dung/.opam/insa/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/nguyen-anh-dung/.dotnet/tools:/home/nguyen-anh-dung/.local/share/JetBrains/Toolbox/scripts', 'SESSION_MANAGER': 'local/nguyen-anh-dung:@/tmp/.ICE-unix/2808,unix/nguyen-anh-dung:/tmp/.ICE-unix/2808', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/527f729a_48dd_447d_8968_9022c70f0f3d', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'DOTNET_BUNDLE_EXTRACT_BASE_DIR': '/home/nguyen-anh-dung/.cache/dotnet_bundle_extract', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.207', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/nguyen-anh-dung/ros2_ws/install/roverc_client:/home/nguyen-anh-dung/ros2_ws/install/robot:/home/nguyen-anh-dung/ros2_ws/install/roverc:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'OPAM_SWITCH_PREFIX': '/home/nguyen-anh-dung/.opam/insa', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nguyen-anh-dung/ros2_ws/build/roverc_client', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nguyen-anh-dung/ros2_ws/build/roverc_client/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nguyen-anh-dung/ros2_ws/install/roverc_client/lib/python3.12/site-packages:/home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages:/home/nguyen-anh-dung/ros2_ws/install/roverc_client/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'MANPATH': '/home/nguyen-anh-dung/.nvm/versions/node/v20.17.0/share/man::/home/nguyen-anh-dung/.opam/insa/man', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/nguyen-anh-dung/ros2_ws/install/roverc:/home/nguyen-anh-dung/ros2_ws/install/robot:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[1.905653] (-) TimerEvent: {}
+[2.005946] (-) TimerEvent: {}
+[2.106224] (-) TimerEvent: {}
+[2.206506] (-) TimerEvent: {}
+[2.242245] (roverc_client) StdoutLine: {'line': b'running egg_info\n'}
+[2.275342] (roverc_client) StdoutLine: {'line': b'writing ../../build/roverc_client/roverc_client.egg-info/PKG-INFO\n'}
+[2.275626] (roverc_client) StdoutLine: {'line': b'writing dependency_links to ../../build/roverc_client/roverc_client.egg-info/dependency_links.txt\n'}
+[2.275820] (roverc_client) StdoutLine: {'line': b'writing entry points to ../../build/roverc_client/roverc_client.egg-info/entry_points.txt\n'}
+[2.276012] (roverc_client) StdoutLine: {'line': b'writing requirements to ../../build/roverc_client/roverc_client.egg-info/requires.txt\n'}
+[2.276156] (roverc_client) StdoutLine: {'line': b'writing top-level names to ../../build/roverc_client/roverc_client.egg-info/top_level.txt\n'}
+[2.306605] (-) TimerEvent: {}
+[2.343105] (roverc_client) StdoutLine: {'line': b"reading manifest file '../../build/roverc_client/roverc_client.egg-info/SOURCES.txt'\n"}
+[2.343974] (roverc_client) StdoutLine: {'line': b"writing manifest file '../../build/roverc_client/roverc_client.egg-info/SOURCES.txt'\n"}
+[2.344213] (roverc_client) StdoutLine: {'line': b'running build\n'}
+[2.344354] (roverc_client) StdoutLine: {'line': b'running build_py\n'}
+[2.344592] (roverc_client) StdoutLine: {'line': b'running install\n'}
+[2.352804] (roverc_client) StdoutLine: {'line': b'running install_lib\n'}
+[2.388854] (roverc_client) StdoutLine: {'line': b'running install_data\n'}
+[2.389153] (roverc_client) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.406644] (-) TimerEvent: {}
+[2.427034] (roverc_client) StdoutLine: {'line': b"removing '/home/nguyen-anh-dung/ros2_ws/install/roverc_client/lib/python3.12/site-packages/roverc_client-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[2.427386] (roverc_client) StdoutLine: {'line': b'Copying ../../build/roverc_client/roverc_client.egg-info to /home/nguyen-anh-dung/ros2_ws/install/roverc_client/lib/python3.12/site-packages/roverc_client-0.0.0-py3.12.egg-info\n'}
+[2.428573] (roverc_client) StdoutLine: {'line': b'running install_scripts\n'}
+[2.506739] (-) TimerEvent: {}
+[2.607016] (-) TimerEvent: {}
+[2.625301] (roverc_client) StdoutLine: {'line': b'Installing client script to /home/nguyen-anh-dung/ros2_ws/install/roverc_client/lib/roverc_client\n'}
+[2.625746] (roverc_client) StdoutLine: {'line': b"writing list of installed files to '/home/nguyen-anh-dung/ros2_ws/build/roverc_client/install.log'\n"}
+[2.660303] (roverc_client) CommandEnded: {'returncode': 0}
+[2.668306] (roverc_client) JobEnded: {'identifier': 'roverc_client', 'rc': 0}
+[2.707113] (-) TimerEvent: {}
+[2.807411] (-) TimerEvent: {}
+[2.907679] (-) TimerEvent: {}
+[3.007938] (-) TimerEvent: {}
+[3.108193] (-) TimerEvent: {}
+[3.208474] (-) TimerEvent: {}
+[3.308725] (-) TimerEvent: {}
+[3.408977] (-) TimerEvent: {}
+[3.509258] (-) TimerEvent: {}
+[3.609542] (-) TimerEvent: {}
+[3.709808] (-) TimerEvent: {}
+[3.810067] (-) TimerEvent: {}
+[3.910365] (-) TimerEvent: {}
+[4.010655] (-) TimerEvent: {}
+[4.110907] (-) TimerEvent: {}
+[4.211157] (-) TimerEvent: {}
+[4.311448] (-) TimerEvent: {}
+[4.411674] (-) TimerEvent: {}
+[4.511931] (-) TimerEvent: {}
+[4.612198] (-) TimerEvent: {}
+[4.712508] (-) TimerEvent: {}
+[4.812815] (-) TimerEvent: {}
+[4.913114] (-) TimerEvent: {}
+[5.013444] (-) TimerEvent: {}
+[5.113675] (-) TimerEvent: {}
+[5.213938] (-) TimerEvent: {}
+[5.314192] (-) TimerEvent: {}
+[5.414480] (-) TimerEvent: {}
+[5.514749] (-) TimerEvent: {}
+[5.615041] (-) TimerEvent: {}
+[5.715320] (-) TimerEvent: {}
+[5.815551] (-) TimerEvent: {}
+[5.915836] (-) TimerEvent: {}
+[6.016100] (-) TimerEvent: {}
+[6.116386] (-) TimerEvent: {}
+[6.216688] (-) TimerEvent: {}
+[6.316936] (-) TimerEvent: {}
+[6.417180] (-) TimerEvent: {}
+[6.517425] (-) TimerEvent: {}
+[6.617672] (-) TimerEvent: {}
+[6.717915] (-) TimerEvent: {}
+[6.818155] (-) TimerEvent: {}
+[6.918399] (-) TimerEvent: {}
+[7.018643] (-) TimerEvent: {}
+[7.118884] (-) TimerEvent: {}
+[7.219124] (-) TimerEvent: {}
+[7.319366] (-) TimerEvent: {}
+[7.419614] (-) TimerEvent: {}
+[7.519855] (-) TimerEvent: {}
+[7.620097] (-) TimerEvent: {}
+[7.720340] (-) TimerEvent: {}
+[7.820552] (-) TimerEvent: {}
+[7.920806] (-) TimerEvent: {}
+[8.021043] (-) TimerEvent: {}
+[8.121281] (-) TimerEvent: {}
+[8.221523] (-) TimerEvent: {}
+[8.321738] (-) TimerEvent: {}
+[8.421975] (-) TimerEvent: {}
+[8.522217] (-) TimerEvent: {}
+[8.622461] (-) TimerEvent: {}
+[8.722703] (-) TimerEvent: {}
+[8.822949] (-) TimerEvent: {}
+[8.923199] (-) TimerEvent: {}
+[9.023425] (-) TimerEvent: {}
+[9.123691] (-) TimerEvent: {}
+[9.223949] (-) TimerEvent: {}
+[9.324191] (-) TimerEvent: {}
+[9.337365] (robot) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable line_servoing_dual\x1b[0m\n'}
+[9.424322] (-) TimerEvent: {}
+[9.524591] (-) TimerEvent: {}
+[9.624846] (-) TimerEvent: {}
+[9.685001] (robot) StdoutLine: {'line': b'[100%] Built target line_servoing_dual\n'}
+[9.699540] (robot) CommandEnded: {'returncode': 0}
+[9.700188] (robot) JobProgress: {'identifier': 'robot', 'progress': 'install'}
+[9.700616] (robot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nguyen-anh-dung/ros2_ws/build/robot'], 'cwd': '/home/nguyen-anh-dung/ros2_ws/build/robot', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'nguyen-anh-dung', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/nguyen-anh-dung/ros2_ws/install/roverc/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/nguyen-anh-dung', 'CAML_LD_LIBRARY_PATH': '/home/nguyen-anh-dung/.opam/insa/lib/stublibs:/home/nguyen-anh-dung/.opam/insa/lib/ocaml/stublibs:/home/nguyen-anh-dung/.opam/insa/lib/ocaml', 'DESKTOP_SESSION': 'ubuntu', 'NVM_BIN': '/home/nguyen-anh-dung/.nvm/versions/node/v20.17.0/bin', 'OCAML_TOPLEVEL_PATH': '/home/nguyen-anh-dung/.opam/insa/lib/toplevel', 'NVM_INC': '/home/nguyen-anh-dung/.nvm/versions/node/v20.17.0/include/node', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2852', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'NVM_DIR': '/home/nguyen-anh-dung/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/nguyen-anh-dung/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'nguyen-anh-dung', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'nguyen-anh-dung', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/home/nguyen-anh-dung/.nvm/versions/node/v20.17.0/bin:/home/nguyen-anh-dung/.opam/insa/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/nguyen-anh-dung/.dotnet/tools:/home/nguyen-anh-dung/.local/share/JetBrains/Toolbox/scripts', 'SESSION_MANAGER': 'local/nguyen-anh-dung:@/tmp/.ICE-unix/2808,unix/nguyen-anh-dung:/tmp/.ICE-unix/2808', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/527f729a_48dd_447d_8968_9022c70f0f3d', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'DOTNET_BUNDLE_EXTRACT_BASE_DIR': '/home/nguyen-anh-dung/.cache/dotnet_bundle_extract', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.207', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/nguyen-anh-dung/ros2_ws/install/roverc_client:/home/nguyen-anh-dung/ros2_ws/install/robot:/home/nguyen-anh-dung/ros2_ws/install/roverc:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'OPAM_SWITCH_PREFIX': '/home/nguyen-anh-dung/.opam/insa', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nguyen-anh-dung/ros2_ws/build/robot', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nguyen-anh-dung/ros2_ws/install/roverc/lib/python3.12/site-packages:/home/nguyen-anh-dung/ros2_ws/install/roverc_client/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'MANPATH': '/home/nguyen-anh-dung/.nvm/versions/node/v20.17.0/share/man::/home/nguyen-anh-dung/.opam/insa/man', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/nguyen-anh-dung/ros2_ws/install/roverc:/home/nguyen-anh-dung/ros2_ws/install/robot:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/nguyen-anh-dung/ros2_ws/install/roverc_client:/opt/ros/jazzy'}), 'shell': False}
+[9.708465] (robot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.708687] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/lib/robot/algo_node\n'}
+[9.708945] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/lib/robot/motor_controller\n'}
+[9.709124] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/lib/robot/trajectory\n'}
+[9.709371] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/lib/robot/trajectory2\n'}
+[9.709648] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/lib/robot/tof_servoing\n'}
+[9.710018] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/lib/robot/line_servoing_front\n'}
+[9.710177] (robot) StdoutLine: {'line': b'-- Installing: /home/nguyen-anh-dung/ros2_ws/install/robot/lib/robot/line_servoing_dual\n'}
+[9.716578] (robot) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/nguyen-anh-dung/ros2_ws/install/robot/lib/robot/line_servoing_dual" to ""\n'}
+[9.716763] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/share/ament_index/resource_index/package_run_dependencies/robot\n'}
+[9.716860] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/share/ament_index/resource_index/parent_prefix_path/robot\n'}
+[9.717023] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/share/robot/environment/ament_prefix_path.sh\n'}
+[9.717162] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/share/robot/environment/ament_prefix_path.dsv\n'}
+[9.717260] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/share/robot/environment/path.sh\n'}
+[9.717371] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/share/robot/environment/path.dsv\n'}
+[9.717452] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/share/robot/local_setup.bash\n'}
+[9.717542] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/share/robot/local_setup.sh\n'}
+[9.717650] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/share/robot/local_setup.zsh\n'}
+[9.717730] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/share/robot/local_setup.dsv\n'}
+[9.717812] (robot) StdoutLine: {'line': b'-- Installing: /home/nguyen-anh-dung/ros2_ws/install/robot/share/robot/package.dsv\n'}
+[9.717929] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/share/ament_index/resource_index/packages/robot\n'}
+[9.718052] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/share/robot/cmake/robotConfig.cmake\n'}
+[9.718178] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/share/robot/cmake/robotConfig-version.cmake\n'}
+[9.718309] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/nguyen-anh-dung/ros2_ws/install/robot/share/robot/package.xml\n'}
+[9.718914] (robot) CommandEnded: {'returncode': 0}
+[9.724969] (-) TimerEvent: {}
+[9.732372] (robot) JobEnded: {'identifier': 'robot', 'rc': 0}
+[9.733108] (-) EventReactorShutdown: {}
