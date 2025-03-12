@@ -27,15 +27,12 @@ class line_servoing_dual : public rclcpp::Node
         }
 
     private:
-        const double c_target = 550.0;
-        const double Kp = 0.002;
-        const double vitesse_x = 0.07;
-        const double seuil_perte_ligne = 680.0;
-        const double vitesse_rotation = 10.0;
+        const double c_target = 560.0;
+        const double Kp = 0.005;
+        const double vitesse_x = 0.05;
 
         double front_error = 0.0;
         double rear_error = 0.0;
-        bool virage_detecte = false;
 
         void rgbcFrontCallback(const std_msgs::msg::UInt16MultiArray::SharedPtr msg)
         {
@@ -47,11 +44,6 @@ class line_servoing_dual : public rclcpp::Node
 
             double c = static_cast<double>(msg -> data[3]);
             front_error = c_target - c;
-
-            if (c > seuil_perte_ligne)
-            {
-                virage_detecte = true;
-            }
 
             publishCmdVel();
         }
@@ -74,25 +66,17 @@ class line_servoing_dual : public rclcpp::Node
         {
             geometry_msgs::msg::Twist cmd_vel;
 
-            if (virage_detecte)
-            {
-                cmd_vel.linear.x = vitesse_x / 10;
-                cmd_vel.angular.z = vitesse_rotation;
-                RCLCPP_INFO(this->get_logger(), "Virage détecté: rotation en cours.");
+            double vy = Kp * (front_error - rear_error) / 2.0;
+            vy = std::clamp(vy, -0.05, 0.05);
 
-                rclcpp::sleep_for(500ms);
-                virage_detecte = false;
-            }
-            else
-            {
-                double wz = Kp * (front_error - rear_error);
-                wz = std::clamp(wz, -1.0, 1.0);
+            double wz = Kp * (front_error - rear_error);
+            wz = std::clamp(wz, -0.05, 0.05);
 
-                cmd_vel.linear.x = vitesse_x;
-                cmd_vel.angular.z = wz;
+            cmd_vel.linear.x = vitesse_x;
+            cmd_vel.linear.y = vy;
+            cmd_vel.angular.z = wz;
 
-                RCLCPP_INFO(this -> get_logger(), "Front error: %.1f, Rear error: %.1f, wz: %.2f", front_error, rear_error, wz);
-            }
+            RCLCPP_INFO(this -> get_logger(), "Front error: %.1f, Rear error: %.1f, wz: %.2f", front_error, rear_error, wz);
 
             cmd_vel_pub_ -> publish(cmd_vel);
         }
