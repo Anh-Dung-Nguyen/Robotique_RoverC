@@ -288,6 +288,19 @@ line_servoing_dual/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/line_servoing_dual.dir/build.make CMakeFiles/line_servoing_dual.dir/build
 .PHONY : line_servoing_dual/fast
 
+#=============================================================================
+# Target rules for targets named line_wall_follower
+
+# Build rule for target.
+line_wall_follower: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 line_wall_follower
+.PHONY : line_wall_follower
+
+# fast build rule for target.
+line_wall_follower/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/line_wall_follower.dir/build.make CMakeFiles/line_wall_follower.dir/build
+.PHONY : line_wall_follower/fast
+
 src/algo_node.o: src/algo_node.cpp.o
 .PHONY : src/algo_node.o
 
@@ -359,6 +372,30 @@ src/line_servoing_front.s: src/line_servoing_front.cpp.s
 src/line_servoing_front.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/line_servoing_front.dir/build.make CMakeFiles/line_servoing_front.dir/src/line_servoing_front.cpp.s
 .PHONY : src/line_servoing_front.cpp.s
+
+src/line_wall_follower.o: src/line_wall_follower.cpp.o
+.PHONY : src/line_wall_follower.o
+
+# target to build an object file
+src/line_wall_follower.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/line_wall_follower.dir/build.make CMakeFiles/line_wall_follower.dir/src/line_wall_follower.cpp.o
+.PHONY : src/line_wall_follower.cpp.o
+
+src/line_wall_follower.i: src/line_wall_follower.cpp.i
+.PHONY : src/line_wall_follower.i
+
+# target to preprocess a source file
+src/line_wall_follower.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/line_wall_follower.dir/build.make CMakeFiles/line_wall_follower.dir/src/line_wall_follower.cpp.i
+.PHONY : src/line_wall_follower.cpp.i
+
+src/line_wall_follower.s: src/line_wall_follower.cpp.s
+.PHONY : src/line_wall_follower.s
+
+# target to generate assembly for a file
+src/line_wall_follower.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/line_wall_follower.dir/build.make CMakeFiles/line_wall_follower.dir/src/line_wall_follower.cpp.s
+.PHONY : src/line_wall_follower.cpp.s
 
 src/motor_controller.o: src/motor_controller.cpp.o
 .PHONY : src/motor_controller.o
@@ -474,6 +511,7 @@ help:
 	@echo "... algo_node"
 	@echo "... line_servoing_dual"
 	@echo "... line_servoing_front"
+	@echo "... line_wall_follower"
 	@echo "... motor_controller"
 	@echo "... tof_servoing"
 	@echo "... trajectory"
@@ -487,6 +525,9 @@ help:
 	@echo "... src/line_servoing_front.o"
 	@echo "... src/line_servoing_front.i"
 	@echo "... src/line_servoing_front.s"
+	@echo "... src/line_wall_follower.o"
+	@echo "... src/line_wall_follower.i"
+	@echo "... src/line_wall_follower.s"
 	@echo "... src/motor_controller.o"
 	@echo "... src/motor_controller.i"
 	@echo "... src/motor_controller.s"
